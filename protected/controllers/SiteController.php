@@ -97,7 +97,6 @@ class SiteController extends Controller
 		// display the login form
 		$this->render('login',array('model'=>$model));
 	}
-
 	/**
 	 * Logs out the current user and redirect to homepage.
 	 */
@@ -106,4 +105,47 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+    public function actionRegistration()
+    {
+        if (Yii::app()->getRequest()->getIsPostRequest())
+        {
+            $registrationModel = new UserRegistration();
+
+            $registrationModel->setAttributes($_POST);
+
+            if (!$registrationModel->validate())
+                return $this->renderAjaxError($registrationModel->getErrors());
+
+            $user = new User();
+            $user->email = $registrationModel->email;
+            $user->password = $user->hashPassword($registrationModel->password);
+            $user->status = User::STATUS_ACTIVE;
+            $user->create_date = new CDbExpression('NOW()');
+
+            if (!$user->save())
+                return $this->renderAjaxError($user->getErrors());
+
+            //TODO: need to move sendNotification action to User Model
+            MailNotification::sendNotification(
+                $user->email,'Welcome!','registration'
+                //array(
+                //    'url' => Yii::app()->createAbsoluteUrl('site/activateaccount', array('url' => $user->activate_key))
+                //)
+            );
+
+            //Auto login
+            $identity = new UserIdentity($registrationModel->email, $registrationModel->password);
+            $identity->authenticate();
+            Yii::app()->user->login($identity, $duration = 3600);
+            Session::model()->startSession(Yii::app()->user->getId());
+
+            return $this->redirect(array('unit/index'));
+
+        } else {
+
+            return $this->render('signup');
+
+        }
+    }
 }

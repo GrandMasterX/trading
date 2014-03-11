@@ -1,53 +1,48 @@
-<?php
-/* @var $this SiteController */
-/* @var $model LoginForm */
-/* @var $form CActiveForm  */
 
-$this->pageTitle=Yii::app()->name . ' - Login';
-$this->breadcrumbs=array(
-	'Login',
-);
-?>
+<div class="wrapper cleared">
+   <? if (Yii::app()->user->hasFlash('success')) :?>
+    <div class="message-list">
+        <div class="message-item success" style="">
+            <header>Notice
+                <span class="close"></span>
+            </header>
+            <div class="message-item-inner"><? Yii::app()->user->getFlash('success');?></div>
+        </div>
+    </div>
+    <?endif;?>
 
-<h1>Login</h1>
+    <form class="form-signin ajax-submit" action="{a route='site/login'}" method="post">
+        <header class="initiative-header cleared">
+            <span class="initiative-title pull-left">Please sign in</span>
+        </header>
+        <div class="form-wrap create-form">
+            <div class="form-line cleared">
+                <span class="input-title pull-left">Email</span>
+                <label class="input-label medium">
+                    <div class="input-wrap">
+                        <input type="text" name="email" class="input" placeholder="Email address">
+                    </div>
+                </label>
+            </div>
+            <div class="form-line cleared">
+                <span class="input-title pull-left">Password</span>
+                <label class="input-label medium">
+                    <div class="input-wrap">
+                        <input type="password" name="password" class="input" placeholder="Password">
+                    </div>
+                </label>
+            </div>
+            <div class="form-line cleared">
+                <label class="custom-control-label">
+                    <input type="checkbox" class="custom-control" name="remember" value="1">
+                    <span class="custom-control-title">Remember me</span>
+                </label>
+            </div>
+        </div>
 
-<p>Please fill out the following form with your login credentials:</p>
+        <input type="submit" class="btn black medium pull-right" value="Sign In">
+        <p class="footer-links"><a href="{a route="recover"}">Forgot password?</a></p>
+        <p class="footer-links"><a href="recover">Forgot password?</a> | <a href="signup">Sign Up</a></p>
+    </form>
 
-<div class="form">
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'login-form',
-	'enableClientValidation'=>true,
-	'clientOptions'=>array(
-		'validateOnSubmit'=>true,
-	),
-)); ?>
-
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'username'); ?>
-		<?php echo $form->textField($model,'username'); ?>
-		<?php echo $form->error($model,'username'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'password'); ?>
-		<?php echo $form->passwordField($model,'password'); ?>
-		<?php echo $form->error($model,'password'); ?>
-		<p class="hint">
-			Hint: You may login with <kbd>demo</kbd>/<kbd>demo</kbd> or <kbd>admin</kbd>/<kbd>admin</kbd>.
-		</p>
-	</div>
-
-	<div class="row rememberMe">
-		<?php echo $form->checkBox($model,'rememberMe'); ?>
-		<?php echo $form->label($model,'rememberMe'); ?>
-		<?php echo $form->error($model,'rememberMe'); ?>
-	</div>
-
-	<div class="row buttons">
-		<?php echo CHtml::submitButton('Login'); ?>
-	</div>
-
-<?php $this->endWidget(); ?>
-</div><!-- form -->
+</div>
