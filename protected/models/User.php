@@ -44,7 +44,7 @@ class User extends MyActiveRecord
 
     public function tableName()
     {
-        return '{{users}}';
+        return 'users';
     }
 
     public static function t($str = '', $params = array())
@@ -57,43 +57,12 @@ class User extends MyActiveRecord
         return Yii::t('app', 'User|Users', $n);
     }
 
-    public function rules()
-    {
-        return array(
-            array('password, email, status, create_date', 'required'),
-            array('email', 'email','message'=>self::t('not valid email')),
-            array('email', 'unique', 'message' => self::t("This user's email address already exists.")),
-            array('is_admin', 'numerical', 'integerOnly' => true),
-            array('status', 'in', 'range' => self::getStatuses(true)),
-            array('email_verified', 'in', 'range' => array(self::EMAIL_VERIFIED, self::EMAIL_NOTVERIFIED)),
-            array('activate_key, reset_key', 'length', 'min' => 32, 'max' => 32),
-            array('activate_key, reset_key', 'length', 'min' => 32, 'max' => 32),
-            array('password', 'length', 'max' => 128, 'min' => 6, 'message' => self::t("Incorrect password (minimal length 4 symbols).")),
-            array('create_date, last_login', 'safe'),
-            array('activate_key, reset_key, is_admin, create_date, last_login, email_verified', 'default', 'setOnEmpty' => true, 'value' => null),
-            array('id, password, email, activate_key, reset_key, is_admin, status, create_date, last_login, email_verified', 'safe', 'on' => 'search'),
-
-        );
-    }
-
-    /**
-     * @return array relational rules.
-     */
-    public function relations()
-    {
-        return array(
-            'profile' => array(self::HAS_ONE, 'Profile', 'user_id'),
-            'notifications' => array(self::HAS_MANY, 'Notifications', 'user_id'),
-            'totalAllocation' => array(self::STAT, 'Member', 'user_id', 'select' => 'SUM(allocation)'),
-        );
-    }
-
     /**
      * @return array customized attribute labels (name=>label)
      */
     public function attributeLabels()
     {
-        return array(
+        /*return array(
             'id' => Yii::t('app', 'ID'),
             'parent_id' => Yii::t('app', 'Parent ID'),
             'password' => Yii::t('app', 'Password'),
@@ -113,24 +82,17 @@ class User extends MyActiveRecord
             'affiliate_hash' => Yii::t('app', 'Affiliate Hash'),
             'affiliate_balance' => Yii::t('app', 'Affiliate Balance'),
             'email_verified' => Yii::t('app', 'Email verified'),
-        );
-    }
-
-    public function scopes()
-    {
-        return array(
-            'active' => array(
-                'condition' => 'status=' . self::STATUS_ACTIVE,
-            ),
-            'suspended' => array(
-                'condition' => 'status=' . self::STATUS_NOACTIVE,
-            )
-        );
+        );*/
     }
 
     public function validatePassword($password)
     {
         return $this->hashPassword($password) === $this->password;
+    }
+
+    public static function checkPassword($this,$user_pass)
+    {
+        return self::hashPassword($this) === $user_pass;
     }
 
     public function hashPassword($password)

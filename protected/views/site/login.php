@@ -11,7 +11,7 @@
     </div>
     <?endif;?>
 
-    <form class="form-signin ajax-submit" action="{a route='site/login'}" method="post">
+    <form class="form-signin ajax-submit" action="site/login" method="post">
         <header class="initiative-header cleared">
             <span class="initiative-title pull-left">Please sign in</span>
         </header>
@@ -41,7 +41,7 @@
         </div>
 
         <input type="submit" class="btn black medium pull-right" value="Sign In">
-        <p class="footer-links"><a href="{a route="recover"}">Forgot password?</a></p>
+        <p class="footer-links"><a href="recover">Forgot password?</a></p>
         <p class="footer-links"><a href="recover">Forgot password?</a> | <a href="signup">Sign Up</a></p>
     </form>
 

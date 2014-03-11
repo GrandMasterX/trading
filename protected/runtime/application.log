@@ -1,0 +1,851 @@
+2014/03/08 04:48:38 [error] [exception.CDbException] exception 'CDbException' with message 'The table "deals" for active record class "Deals" cannot be found in the database.' in Z:\home\trading\www\framework\yiilite.php:8289
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(7392): CActiveRecordMetaData->__construct(Object(Deals))
+#1 Z:\home\trading\www\framework\yiilite.php(7463): CActiveRecord->getMetaData()
+#2 Z:\home\trading\www\framework\yiilite.php(7811): CActiveRecord->getTableSchema()
+#3 Z:\home\trading\www\framework\yiilite.php(7876): CActiveRecord->query(Object(CDbCriteria))
+#4 Z:\home\trading\www\protected\models\Deals.php(79): CActiveRecord->find(Object(CDbCriteria))
+#5 Z:\home\trading\www\protected\views\site\index.php(5): Deals::dealsByTicket(1, 2)
+#6 Z:\home\trading\www\framework\yiilite.php(3419): require('Z:\home\trading...')
+#7 Z:\home\trading\www\framework\yiilite.php(3398): CBaseController->renderInternal('Z:\home\trading...', NULL, true)
+#8 Z:\home\trading\www\framework\yiilite.php(3822): CBaseController->renderFile('Z:\home\trading...', NULL, true)
+#9 Z:\home\trading\www\framework\yiilite.php(3790): CController->renderPartial('index', NULL, true)
+#10 Z:\home\trading\www\protected\controllers\SiteController.php(32): CController->render('index')
+#11 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionIndex()
+#12 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams(Array)
+#13 Z:\home\trading\www\framework\yiilite.php(3555): CController->runAction(Object(CInlineAction))
+#14 Z:\home\trading\www\framework\yiilite.php(3545): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 Z:\home\trading\www\framework\yiilite.php(1746): CController->run('index')
+#16 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('')
+#17 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#18 Z:\home\trading\www\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/
+---
+2014/03/08 04:51:24 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=> '2013-03-07' and  date<='2013-03-08' LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `deals` `t` WHERE date => '2013-03-07' and  date<='2013-03-08' LIMIT 1.
+in Z:\home\trading\www\protected\models\Deals.php (79)
+in Z:\home\trading\www\protected\views\site\index.php (5)
+in Z:\home\trading\www\protected\controllers\SiteController.php (32)
+2014/03/08 04:51:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=> '2013-03-07' and  date<='2013-03-08' LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `deals` `t` WHERE date => '2013-03-07' and  date<='2013-03-08' LIMIT 1' in Z:\home\trading\www\framework\yiilite.php:9341
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(9268): CDbCommand->queryInternal('fetch', Array, Array)
+#1 Z:\home\trading\www\framework\yiilite.php(7812): CDbCommand->queryRow()
+#2 Z:\home\trading\www\framework\yiilite.php(7876): CActiveRecord->query(Object(CDbCriteria))
+#3 Z:\home\trading\www\protected\models\Deals.php(79): CActiveRecord->find(Object(CDbCriteria))
+#4 Z:\home\trading\www\protected\views\site\index.php(5): Deals::dealsByTicket(1, 2)
+#5 Z:\home\trading\www\framework\yiilite.php(3419): require('Z:\home\trading...')
+#6 Z:\home\trading\www\framework\yiilite.php(3398): CBaseController->renderInternal('Z:\home\trading...', NULL, true)
+#7 Z:\home\trading\www\framework\yiilite.php(3822): CBaseController->renderFile('Z:\home\trading...', NULL, true)
+#8 Z:\home\trading\www\framework\yiilite.php(3790): CController->renderPartial('index', NULL, true)
+#9 Z:\home\trading\www\protected\controllers\SiteController.php(32): CController->render('index')
+#10 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionIndex()
+#11 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams(Array)
+#12 Z:\home\trading\www\framework\yiilite.php(3555): CController->runAction(Object(CInlineAction))
+#13 Z:\home\trading\www\framework\yiilite.php(3545): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\trading\www\framework\yiilite.php(1746): CController->run('index')
+#15 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('')
+#16 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#17 Z:\home\trading\www\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+---
+2014/03/08 04:52:26 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=> '2013-03-07' and  <='2013-03-08' LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `deals` `t` WHERE date => '2013-03-07' and  <='2013-03-08' LIMIT 1.
+in Z:\home\trading\www\protected\models\Deals.php (79)
+in Z:\home\trading\www\protected\views\site\index.php (5)
+in Z:\home\trading\www\protected\controllers\SiteController.php (32)
+2014/03/08 04:52:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=> '2013-03-07' and  <='2013-03-08' LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `deals` `t` WHERE date => '2013-03-07' and  <='2013-03-08' LIMIT 1' in Z:\home\trading\www\framework\yiilite.php:9341
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(9268): CDbCommand->queryInternal('fetch', Array, Array)
+#1 Z:\home\trading\www\framework\yiilite.php(7812): CDbCommand->queryRow()
+#2 Z:\home\trading\www\framework\yiilite.php(7876): CActiveRecord->query(Object(CDbCriteria))
+#3 Z:\home\trading\www\protected\models\Deals.php(79): CActiveRecord->find(Object(CDbCriteria))
+#4 Z:\home\trading\www\protected\views\site\index.php(5): Deals::dealsByTicket(1, 2)
+#5 Z:\home\trading\www\framework\yiilite.php(3419): require('Z:\home\trading...')
+#6 Z:\home\trading\www\framework\yiilite.php(3398): CBaseController->renderInternal('Z:\home\trading...', NULL, true)
+#7 Z:\home\trading\www\framework\yiilite.php(3822): CBaseController->renderFile('Z:\home\trading...', NULL, true)
+#8 Z:\home\trading\www\framework\yiilite.php(3790): CController->renderPartial('index', NULL, true)
+#9 Z:\home\trading\www\protected\controllers\SiteController.php(32): CController->render('index')
+#10 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionIndex()
+#11 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams(Array)
+#12 Z:\home\trading\www\framework\yiilite.php(3555): CController->runAction(Object(CInlineAction))
+#13 Z:\home\trading\www\framework\yiilite.php(3545): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\trading\www\framework\yiilite.php(1746): CController->run('index')
+#15 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('')
+#16 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#17 Z:\home\trading\www\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/
+---
+2014/03/08 05:04:10 [error] [php] json_decode() expects parameter 1 to be string, array given (Z:\home\trading\www\protected\models\Deals.php:79)
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(3419): require()
+#1 Z:\home\trading\www\framework\yiilite.php(3398): SiteController->renderInternal()
+#2 Z:\home\trading\www\framework\yiilite.php(3822): SiteController->renderFile()
+#3 Z:\home\trading\www\framework\yiilite.php(3790): SiteController->renderPartial()
+#4 Z:\home\trading\www\protected\controllers\SiteController.php(32): SiteController->render()
+#5 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionIndex()
+#6 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#7 Z:\home\trading\www\framework\yiilite.php(3555): SiteController->runAction()
+#8 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#9 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#10 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#11 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#12 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in Z:\home\trading\www\protected\models\Deals.php (79)
+in Z:\home\trading\www\protected\views\site\index.php (5)
+in Z:\home\trading\www\protected\controllers\SiteController.php (32)
+2014/03/11 07:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "signup".' in Z:\home\trading\www\framework\yiilite.php:3668
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(3550): CController->missingAction('signup')
+#1 Z:\home\trading\www\framework\yiilite.php(1746): CController->run('signup')
+#2 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('site/signup')
+#3 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/signup
+---
+2014/03/11 07:39:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "signup".' in Z:\home\trading\www\framework\yiilite.php:3668
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(3550): CController->missingAction('signup')
+#1 Z:\home\trading\www\framework\yiilite.php(1746): CController->run('signup')
+#2 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('site/signup')
+#3 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/signup
+---
+2014/03/11 07:39:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "signup".' in Z:\home\trading\www\framework\yiilite.php:3668
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(3550): CController->missingAction('signup')
+#1 Z:\home\trading\www\framework\yiilite.php(1746): CController->run('signup')
+#2 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('site/signup')
+#3 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/signup
+---
+2014/03/11 07:41:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "signup".' in Z:\home\trading\www\framework\yiilite.php:3668
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(3550): CController->missingAction('signup')
+#1 Z:\home\trading\www\framework\yiilite.php(1746): CController->run('signup')
+#2 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('site/signup')
+#3 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/signup
+---
+2014/03/11 07:41:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "signup".' in Z:\home\trading\www\framework\yiilite.php:3668
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(3550): CController->missingAction('signup')
+#1 Z:\home\trading\www\framework\yiilite.php(1746): CController->run('signup')
+#2 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('site/signup')
+#3 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/signup
+---
+2014/03/11 07:41:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registratio".' in Z:\home\trading\www\framework\yiilite.php:3668
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(3550): CController->missingAction('registratio')
+#1 Z:\home\trading\www\framework\yiilite.php(1746): CController->run('registratio')
+#2 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('site/registrati...')
+#3 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/registratio
+---
+2014/03/11 07:41:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "signup".' in Z:\home\trading\www\framework\yiilite.php:3668
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(3550): CController->missingAction('signup')
+#1 Z:\home\trading\www\framework\yiilite.php(1746): CController->run('signup')
+#2 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('site/signup')
+#3 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/signup
+---
+2014/03/11 07:42:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "signup".' in Z:\home\trading\www\framework\yiilite.php:3668
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(3550): CController->missingAction('signup')
+#1 Z:\home\trading\www\framework\yiilite.php(1746): CController->run('signup')
+#2 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('site/signup')
+#3 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/signup
+---
+2014/03/11 07:42:46 [error] [php] strpos() expects parameter 1 to be string, array given (Z:\home\trading\www\framework\yiilite.php:3755)
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(3820): SiteController->getViewFile()
+#1 Z:\home\trading\www\framework\yiilite.php(3790): SiteController->renderPartial()
+#2 Z:\home\trading\www\protected\controllers\SiteController.php(147): SiteController->render()
+#3 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#4 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#5 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#6 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#7 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#8 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#9 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#10 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#11 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#12 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#13 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#14 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#15 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/Registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (147)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 07:42:58 [error] [php] strpos() expects parameter 1 to be string, array given (Z:\home\trading\www\framework\yiilite.php:3755)
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(3820): SiteController->getViewFile()
+#1 Z:\home\trading\www\framework\yiilite.php(3790): SiteController->renderPartial()
+#2 Z:\home\trading\www\protected\controllers\SiteController.php(147): SiteController->render()
+#3 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#4 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#5 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#6 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#7 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#8 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#9 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#10 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#11 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#12 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#13 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#14 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#15 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=site/Registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (147)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 07:43:12 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "site/signup".' in Z:\home\trading\www\framework\yiilite.php:3831
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(3790): CController->renderPartial('site/signup', NULL, true)
+#1 Z:\home\trading\www\protected\controllers\SiteController.php(147): CController->render('site/signup')
+#2 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#3 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams(Array)
+#4 Z:\home\trading\www\framework\yiilite.php(6743): CController->runAction(Object(CInlineAction))
+#5 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#6 Z:\home\trading\www\framework\yiilite.php(3948): CFilter->filter(Object(CFilterChain))
+#7 Z:\home\trading\www\framework\yiilite.php(6785): CController->filterAccessControl(Object(CFilterChain))
+#8 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter(Object(CFilterChain))
+#9 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#10 Z:\home\trading\www\framework\yiilite.php(3545): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\trading\www\framework\yiilite.php(1746): CController->run('Registration')
+#12 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('site/Registrati...')
+#13 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#14 Z:\home\trading\www\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php?r=site/Registration
+---
+2014/03/11 08:02:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index/index".' in Z:\home\trading\www\framework\yiilite.php:1750
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('index/index')
+#1 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/index
+---
+2014/03/11 08:02:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "signup".' in Z:\home\trading\www\framework\yiilite.php:3668
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(3550): CController->missingAction('signup')
+#1 Z:\home\trading\www\framework\yiilite.php(1746): CController->run('signup')
+#2 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('site/signup')
+#3 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/signup
+---
+2014/03/11 08:03:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "registratio".' in Z:\home\trading\www\framework\yiilite.php:3668
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(3550): CController->missingAction('registratio')
+#1 Z:\home\trading\www\framework\yiilite.php(1746): CController->run('registratio')
+#2 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('site/registrati...')
+#3 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php?r=site/registratio
+---
+2014/03/11 08:26:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/index".' in Z:\home\trading\www\framework\yiilite.php:1750
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('registration/in...')
+#1 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/registration
+---
+2014/03/11 17:26:21 [error] [exception.CException] exception 'CException' with message 'Property "CDbAuthManager.allowAutoLogin" is not defined.' in Z:\home\trading\www\framework\yiilite.php:638
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(109): CComponent->__set('allowAutoLogin', true)
+#1 Z:\home\trading\www\framework\yiilite.php(1059): YiiBase::createComponent(Array)
+#2 Z:\home\trading\www\framework\yiilite.php(915): CModule->getComponent('user')
+#3 Z:\home\trading\www\protected\components\Controller.php(50): CModule->__get('user')
+#4 Z:\home\trading\www\framework\yiilite.php(1745): Controller->init()
+#5 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('site/login')
+#6 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#7 Z:\home\trading\www\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/login
+---
+2014/03/11 17:32:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/index".' in Z:\home\trading\www\framework\yiilite.php:1750
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('registration/in...')
+#1 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/registration
+HTTP_REFERER=http://trading/signup
+---
+2014/03/11 17:32:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/index".' in Z:\home\trading\www\framework\yiilite.php:1750
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('registration/in...')
+#1 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/registration
+HTTP_REFERER=http://trading/signup
+---
+2014/03/11 17:33:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "registration/index".' in Z:\home\trading\www\framework\yiilite.php:1750
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController('registration/in...')
+#1 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/registration
+HTTP_REFERER=http://trading/signup
+---
+2014/03/11 17:34:12 [error] [php] include(GxActiveRecord.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (Z:\home\trading\www\framework\yiilite.php:244)
+Stack trace:
+#0 Z:\home\trading\www\protected\components\MyActiveRecord.php(3): spl_autoload_call()
+#1 Z:\home\trading\www\framework\yiilite.php(244): include()
+#2 unknown(0): autoload()
+#3 Z:\home\trading\www\protected\models\User.php(17): spl_autoload_call()
+#4 Z:\home\trading\www\framework\yiilite.php(244): include()
+#5 unknown(0): autoload()
+#6 Z:\home\trading\www\protected\models\UserRegistration.php(11): spl_autoload_call()
+#7 Z:\home\trading\www\framework\yiilite.php(244): include()
+#8 unknown(0): autoload()
+#9 Z:\home\trading\www\protected\controllers\SiteController.php(113): spl_autoload_call()
+#10 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#11 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#12 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#13 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#14 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#15 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#16 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#17 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#18 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#19 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#20 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#21 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#22 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\components\MyActiveRecord.php (3)
+in Z:\home\trading\www\protected\models\User.php (17)
+in Z:\home\trading\www\protected\models\UserRegistration.php (11)
+2014/03/11 17:38:07 [error] [php] include(GxActiveRecord.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (Z:\home\trading\www\framework\yiilite.php:244)
+Stack trace:
+#0 Z:\home\trading\www\protected\components\MyActiveRecord.php(3): spl_autoload_call()
+#1 Z:\home\trading\www\framework\yiilite.php(244): include()
+#2 unknown(0): autoload()
+#3 Z:\home\trading\www\protected\models\User.php(17): spl_autoload_call()
+#4 Z:\home\trading\www\framework\yiilite.php(244): include()
+#5 unknown(0): autoload()
+#6 Z:\home\trading\www\protected\models\UserRegistration.php(11): spl_autoload_call()
+#7 Z:\home\trading\www\framework\yiilite.php(244): include()
+#8 unknown(0): autoload()
+#9 Z:\home\trading\www\protected\controllers\SiteController.php(113): spl_autoload_call()
+#10 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#11 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#12 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#13 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#14 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#15 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#16 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#17 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#18 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#19 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#20 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#21 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#22 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\components\MyActiveRecord.php (3)
+in Z:\home\trading\www\protected\models\User.php (17)
+in Z:\home\trading\www\protected\models\UserRegistration.php (11)
+2014/03/11 17:38:10 [error] [php] include(GxActiveRecord.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (Z:\home\trading\www\framework\yiilite.php:244)
+Stack trace:
+#0 Z:\home\trading\www\protected\components\MyActiveRecord.php(3): spl_autoload_call()
+#1 Z:\home\trading\www\framework\yiilite.php(244): include()
+#2 unknown(0): autoload()
+#3 Z:\home\trading\www\protected\models\User.php(17): spl_autoload_call()
+#4 Z:\home\trading\www\framework\yiilite.php(244): include()
+#5 unknown(0): autoload()
+#6 Z:\home\trading\www\protected\models\UserRegistration.php(11): spl_autoload_call()
+#7 Z:\home\trading\www\framework\yiilite.php(244): include()
+#8 unknown(0): autoload()
+#9 Z:\home\trading\www\protected\controllers\SiteController.php(113): spl_autoload_call()
+#10 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#11 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#12 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#13 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#14 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#15 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#16 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#17 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#18 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#19 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#20 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#21 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#22 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\components\MyActiveRecord.php (3)
+in Z:\home\trading\www\protected\models\User.php (17)
+in Z:\home\trading\www\protected\models\UserRegistration.php (11)
+2014/03/11 17:39:40 [error] [php] include(GxActiveRecord.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (Z:\home\trading\www\framework\yiilite.php:244)
+Stack trace:
+#0 Z:\home\trading\www\protected\components\MyActiveRecord.php(3): spl_autoload_call()
+#1 Z:\home\trading\www\framework\yiilite.php(244): include()
+#2 unknown(0): autoload()
+#3 Z:\home\trading\www\protected\models\User.php(17): spl_autoload_call()
+#4 Z:\home\trading\www\framework\yiilite.php(244): include()
+#5 unknown(0): autoload()
+#6 Z:\home\trading\www\protected\models\UserRegistration.php(11): spl_autoload_call()
+#7 Z:\home\trading\www\framework\yiilite.php(244): include()
+#8 unknown(0): autoload()
+#9 Z:\home\trading\www\protected\controllers\SiteController.php(113): spl_autoload_call()
+#10 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#11 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#12 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#13 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#14 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#15 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#16 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#17 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#18 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#19 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#20 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#21 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#22 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\components\MyActiveRecord.php (3)
+in Z:\home\trading\www\protected\models\User.php (17)
+in Z:\home\trading\www\protected\models\UserRegistration.php (11)
+2014/03/11 17:44:03 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\yiilite.php:8312)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(113): UserRegistration->__construct()
+#1 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#4 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#5 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#6 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#7 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#8 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#9 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#10 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#11 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#12 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#13 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (113)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 17:45:07 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\yiilite.php:8312)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(113): UserRegistration->__construct()
+#1 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#4 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#5 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#6 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#7 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#8 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#9 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#10 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#11 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#12 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#13 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (113)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 17:45:52 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\yiilite.php:8312)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(113): UserRegistration->__construct()
+#1 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#4 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#5 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#6 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#7 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#8 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#9 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#10 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#11 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#12 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#13 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (113)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 17:48:32 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\yiilite.php:8312)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(113): UserRegistration->__construct()
+#1 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#4 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#5 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#6 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#7 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#8 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#9 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#10 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#11 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#12 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#13 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (113)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 17:52:38 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\yiilite.php:8312)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(113): UserRegistration->__construct()
+#1 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#4 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#5 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#6 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#7 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#8 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#9 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#10 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#11 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#12 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#13 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (113)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 17:53:58 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\db\ar\CActiveRecord.php:2387)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(113): UserRegistration->__construct()
+#1 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): SiteController->runAction()
+#4 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\trading\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): SiteController->filterAccessControl()
+#7 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\trading\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 Z:\home\trading\www\framework\web\CWebApplication.php(282): SiteController->run()
+#11 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (113)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 17:54:04 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\db\ar\CActiveRecord.php:2387)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(113): UserRegistration->__construct()
+#1 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): SiteController->runAction()
+#4 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\trading\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): SiteController->filterAccessControl()
+#7 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\trading\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 Z:\home\trading\www\framework\web\CWebApplication.php(282): SiteController->run()
+#11 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (113)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 17:55:33 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\db\ar\CActiveRecord.php:2387)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(113): UserRegistration->__construct()
+#1 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): SiteController->runAction()
+#4 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\trading\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): SiteController->filterAccessControl()
+#7 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\trading\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 Z:\home\trading\www\framework\web\CWebApplication.php(282): SiteController->run()
+#11 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (113)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 17:58:01 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\yiilite.php:8312)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(113): UserRegistration->__construct()
+#1 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#4 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#5 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#6 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#7 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#8 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#9 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#10 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#11 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#12 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#13 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (113)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 18:00:01 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\yiilite.php:8312)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(113): UserRegistration->__construct()
+#1 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#4 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#5 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#6 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#7 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#8 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#9 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#10 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#11 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#12 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#13 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (113)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 18:00:38 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\yiilite.php:8312)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(113): UserRegistration->__construct()
+#1 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#4 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#5 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#6 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#7 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#8 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#9 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#10 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#11 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#12 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#13 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (113)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 18:02:04 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\yiilite.php:7030)
+Stack trace:
+#0 Z:\home\trading\www\framework\yiilite.php(7534): User->validate()
+#1 Z:\home\trading\www\protected\controllers\SiteController.php(126): User->save()
+#2 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#3 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#4 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#5 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#6 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#7 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#8 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#9 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#10 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#11 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#12 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#13 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#14 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (126)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 18:04:00 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\yiilite.php:8312)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(113): UserRegistration->__construct()
+#1 Z:\home\trading\www\framework\yiilite.php(4058): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\yiilite.php(3570): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\yiilite.php(6743): SiteController->runAction()
+#4 Z:\home\trading\www\framework\yiilite.php(6752): CFilterChain->run()
+#5 Z:\home\trading\www\framework\yiilite.php(3948): CAccessControlFilter->filter()
+#6 Z:\home\trading\www\framework\yiilite.php(6785): SiteController->filterAccessControl()
+#7 Z:\home\trading\www\framework\yiilite.php(6740): CInlineFilter->filter()
+#8 Z:\home\trading\www\framework\yiilite.php(3560): CFilterChain->run()
+#9 Z:\home\trading\www\framework\yiilite.php(3545): SiteController->runActionWithFilters()
+#10 Z:\home\trading\www\framework\yiilite.php(1746): SiteController->run()
+#11 Z:\home\trading\www\framework\yiilite.php(1666): CWebApplication->runController()
+#12 Z:\home\trading\www\framework\yiilite.php(1191): CWebApplication->processRequest()
+#13 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (113)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 18:04:17 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\db\ar\CActiveRecord.php:2387)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(113): UserRegistration->__construct()
+#1 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): SiteController->runAction()
+#4 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\trading\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): SiteController->filterAccessControl()
+#7 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\trading\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 Z:\home\trading\www\framework\web\CWebApplication.php(282): SiteController->run()
+#11 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (113)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 18:04:27 [error] [php] Invalid argument supplied for foreach() (Z:\home\trading\www\framework\db\ar\CActiveRecord.php:2387)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(113): UserRegistration->__construct()
+#1 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): SiteController->runAction()
+#4 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 Z:\home\trading\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): SiteController->filterAccessControl()
+#7 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#9 Z:\home\trading\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 Z:\home\trading\www\framework\web\CWebApplication.php(282): SiteController->run()
+#11 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (113)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 18:05:41 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'carcure.{{profile}}' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `{{profile}}`.
+in Z:\home\trading\www\protected\models\User.php (143)
+in Z:\home\trading\www\protected\models\User.php (136)
+in Z:\home\trading\www\protected\controllers\SiteController.php (126)
+2014/03/11 18:05:41 [error] [exception.CDbException] exception 'CDbException' with message 'The table "{{profile}}" for active record class "Profile" cannot be found in the database.' in Z:\home\trading\www\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 Z:\home\trading\www\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Profile))
+#1 Z:\home\trading\www\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 Z:\home\trading\www\protected\models\User.php(143): CActiveRecord->__construct()
+#3 Z:\home\trading\www\protected\models\User.php(136): User->createProfile()
+#4 Z:\home\trading\www\framework\db\ar\CActiveRecord.php(1097): User->afterSave()
+#5 Z:\home\trading\www\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#6 Z:\home\trading\www\protected\controllers\SiteController.php(126): CActiveRecord->save()
+#7 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#8 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#10 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#11 Z:\home\trading\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#12 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#13 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#14 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#15 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('registration')
+#17 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#18 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 Z:\home\trading\www\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/site/registration
+HTTP_REFERER=http://trading/signup
+---
+2014/03/11 19:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('index/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index
+---
+2014/03/11 19:06:55 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.browser" is not defined.' in Z:\home\trading\www\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\trading\www\framework\base\CModule.php(105): CComponent->__get('browser')
+#1 Z:\home\trading\www\protected\components\ControllerFrontEnd.php(12): CModule->__get('browser')
+#2 Z:\home\trading\www\framework\web\CController.php(306): ControllerFrontEnd->beforeAction(Object(CInlineAction))
+#3 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('login')
+#6 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#7 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\trading\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/login
+---
+2014/03/11 19:41:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "{a route='site/login'}".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('{a route='site/...')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/%7Ba%20route='site/login'%7D
+HTTP_REFERER=http://trading/login
+---
+2014/03/11 19:46:35 [error] [exception.CException] exception 'CException' with message 'Alias "application.behaviors.CCleanTextBehavior" is invalid. Make sure it points to an existing PHP file and the file is readable.' in Z:\home\trading\www\framework\YiiBase.php:323
+Stack trace:
+#0 Z:\home\trading\www\framework\YiiBase.php(196): YiiBase::import('application.beh...', true)
+#1 Z:\home\trading\www\framework\base\CComponent.php(329): YiiBase::createComponent(Array)
+#2 Z:\home\trading\www\framework\base\CComponent.php(298): CComponent->attachBehavior('CCleanTextBehav...', Array)
+#3 Z:\home\trading\www\framework\db\ar\CActiveRecord.php(83): CComponent->attachBehaviors(Array)
+#4 Z:\home\trading\www\protected\models\User.php(143): CActiveRecord->__construct()
+#5 Z:\home\trading\www\protected\models\User.php(136): User->createProfile()
+#6 Z:\home\trading\www\framework\db\ar\CActiveRecord.php(1097): User->afterSave()
+#7 Z:\home\trading\www\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#8 Z:\home\trading\www\protected\controllers\SiteController.php(141): CActiveRecord->save()
+#9 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#10 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('registration')
+#14 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#15 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\trading\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/site/registration
+HTTP_REFERER=http://trading/signup
+---
+2014/03/11 19:54:03 [error] [exception.CException] exception 'CException' with message 'Property "Profile.timezone" is not defined.' in Z:\home\trading\www\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\trading\www\framework\db\ar\CActiveRecord.php(145): CComponent->__get('timezone')
+#1 Z:\home\trading\www\framework\validators\CStringValidator.php(79): CActiveRecord->__get('timezone')
+#2 Z:\home\trading\www\framework\validators\CValidator.php(213): CStringValidator->validateAttribute(Object(Profile), 'timezone')
+#3 Z:\home\trading\www\framework\base\CModel.php(159): CValidator->validate(Object(Profile), NULL)
+#4 Z:\home\trading\www\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#5 Z:\home\trading\www\protected\models\User.php(146): CActiveRecord->save()
+#6 Z:\home\trading\www\protected\models\User.php(136): User->createProfile()
+#7 Z:\home\trading\www\framework\db\ar\CActiveRecord.php(1097): User->afterSave()
+#8 Z:\home\trading\www\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#9 Z:\home\trading\www\protected\controllers\SiteController.php(141): CActiveRecord->save()
+#10 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#11 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('registration')
+#15 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#16 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\trading\www\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/site/registration
+HTTP_REFERER=http://trading/signup
+---
+2014/03/11 20:06:02 [error] [php] include(Session.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (Z:\home\trading\www\framework\YiiBase.php:432)
+Stack trace:
+#0 Z:\home\trading\www\protected\models\UserLogin.php(87): spl_autoload_call()
+#1 Z:\home\trading\www\framework\base\CModel.php(160): UserLogin->afterValidate()
+#2 Z:\home\trading\www\protected\controllers\SiteController.php(91): UserLogin->validate()
+#3 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 Z:\home\trading\www\framework\web\CController.php(286): SiteController->runAction()
+#6 Z:\home\trading\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 Z:\home\trading\www\framework\web\CWebApplication.php(282): SiteController->run()
+#8 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/login
+in Z:\home\trading\www\protected\models\UserLogin.php (87)
+in Z:\home\trading\www\protected\controllers\SiteController.php (91)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 20:23:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "trading/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/trading
+HTTP_REFERER=http://trading/login
+---

@@ -56,15 +56,19 @@ class UserLogin extends CFormModel
                     Yii::app()->user->login($identity, $duration);
                     break;
                 case UserIdentity::ERROR_EMAIL_INVALID:
+                    die('234');
                     $this->addError("email", UserAuth::t("Email is incorrect."));
                     break;
                 case UserIdentity::ERROR_STATUS_NOACTIVE:
+                    die('345');
                     $this->addError("status", UserAuth::t("You account is suspended."));
                     break;
                 case UserIdentity::ERROR_STATUS_BAN:
+                    die('456');
                     $this->addError("status", UserAuth::t("You account is blocked."));
                     break;
                 case UserIdentity::ERROR_PASSWORD_INVALID:
+                    die('567');
                     $this->addError("password", UserAuth::t("Password is incorrect."));
                     break;
             }
@@ -76,13 +80,11 @@ class UserLogin extends CFormModel
         parent::afterValidate();
 
         if(!$this->getErrors()){
-
             $lastVisit = User::model()->findByPk(Yii::app()->user->getId());
             $lastVisit->last_login = new CDbExpression('NOW()');
             $lastVisit->save();
 
-            Session::model()->startSession(Yii::app()->user->getId());
-
+            //Session::model()->startSession(Yii::app()->user->getId());
         }
 
         return true;

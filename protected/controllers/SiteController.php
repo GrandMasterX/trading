@@ -1,6 +1,6 @@
 <?php
 
-class SiteController extends Controller
+class SiteController extends ControllerFrontEnd
 {
 	/**
 	 * Declares class-based actions.
@@ -27,8 +27,6 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
-		// renders the view file 'protected/views/site/index.php'
-		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
 	}
 
@@ -75,36 +73,45 @@ class SiteController extends Controller
 	/**
 	 * Displays the login page
 	 */
-	public function actionLogin()
-	{
-		$model=new LoginForm;
+    public function actionLogin() {
+        if (!Yii::app()->user->isGuest){
+            if(Yii::app()->user->returnUrl){
+                $this->redirect(Yii::app()->user->returnUrl);
+            }else{
+                $this->redirect(array('trading/index'));
+            }
+        }
 
-		// if it is ajax validation request
-		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
+        if (Yii::app()->getRequest()->getIsPostRequest()) {
 
-		// collect user input data
-		if(isset($_POST['LoginForm']))
-		{
-			$model->attributes=$_POST['LoginForm'];
-			// validate user input and redirect to the previous page if valid
-			if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->user->returnUrl);
-		}
-		// display the login form
-		$this->render('login',array('model'=>$model));
-	}
+            $model = new UserLogin;
+
+            $model->setAttributes($_POST);
+
+            if (!$model->validate())
+                return $this->renderAjaxModel($model);
+
+            $lastVisit = User::model()->findByPk(Yii::app()->user->getId());
+            $lastVisit->last_login = new CDbExpression('NOW()');
+            $lastVisit->save();
+
+            $this->redirect(array('trading/index'));
+
+        } else {
+
+            return $this->render('login');
+
+        }
+    }
 	/**
 	 * Logs out the current user and redirect to homepage.
 	 */
-	public function actionLogout()
-	{
-		Yii::app()->user->logout();
-		$this->redirect(Yii::app()->homeUrl);
-	}
+    public function actionLogout() {
+
+        Yii::app()->user->logout();
+
+        $this->redirect(array('site/index'));
+    }
 
     public function actionRegistration()
     {
@@ -127,12 +134,12 @@ class SiteController extends Controller
                 return $this->renderAjaxError($user->getErrors());
 
             //TODO: need to move sendNotification action to User Model
-            MailNotification::sendNotification(
+            /*MailNotification::sendNotification(
                 $user->email,'Welcome!','registration'
                 //array(
                 //    'url' => Yii::app()->createAbsoluteUrl('site/activateaccount', array('url' => $user->activate_key))
                 //)
-            );
+            );*/
 
             //Auto login
             $identity = new UserIdentity($registrationModel->email, $registrationModel->password);
@@ -140,10 +147,9 @@ class SiteController extends Controller
             Yii::app()->user->login($identity, $duration = 3600);
             Session::model()->startSession(Yii::app()->user->getId());
 
-            return $this->redirect(array('unit/index'));
+            return $this->redirect(array('trading/index'));
 
         } else {
-
             return $this->render('signup');
 
         }

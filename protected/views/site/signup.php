@@ -1,6 +1,6 @@
 <div class="wrapper cleared">
 
-    <form class="form-signin ajax-submit" action="registration" method="post">
+    <form class="form-signin ajax-submit" action="site/registration" method="post">
         <header class="initiative-header cleared">
             <span class="initiative-title pull-left">Please sign up</span>
         </header>

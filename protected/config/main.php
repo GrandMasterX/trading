@@ -6,22 +6,18 @@ return array(
 
 	// preloading 'log' component
 	'preload'=>array('log'),
-    'defaultController' => 'site/index',
-
 	// autoloading model and component classes
 	'import'=>array(
         'application.models.*',
         'application.components.*',
         'application.extensions.*',
+        'ext.giix.components.*',
 	),
 	// application components
 	'components'=>array(
-        'user' => array(
-            // enable cookie-based authentication
-            #'class' => 'UserAuth',
-            'allowAutoLogin' => true,
-            'loginUrl' => array('site/login'),
-            //  'returnUrl' => array('account/index'),
+        'authManager'=>array(
+            'class' => 'CPhpAuthManager',
+            'defaultRoles' => array('guest', 'admin'),
         ),
         'urlManager' => array(
             'urlFormat' => 'path',
@@ -77,5 +73,8 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+        'file_upload_size_limit' => 8 * 1024 * 1024,
+        'file_upload_allowed_extension' => array('jpg', 'jpeg', 'gif', 'png', 'doc', 'xls', 'docx', 'xlsx'),
+        'image_upload_allowed_extension' => array('jpg', 'jpeg', 'gif', 'png'),
 	),
 );

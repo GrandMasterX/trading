@@ -1,0 +1,124 @@
+.grid-view-loading
+{
+	background: url(../loader.gif) no-repeat;
+}
+
+.grid-view table.items
+{
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.grid-view table.items th,
+.grid-view table.items td
+{
+	border: solid 1px #ccc;
+	padding: 4px 8px;
+	vertical-align: middle;
+}
+
+.grid-view table.items th
+{
+	background: #f9f9f9;
+	text-align: left;
+	font-weight: bold;
+}
+
+.grid-view table.items th a
+{
+	text-decoration: none;
+}
+
+.grid-view table.items th a.asc
+{
+	background: url(up.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items th a.desc
+{
+	background: url(down.gif) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items tr.even
+{
+	background: #f9f9f9;
+}
+
+.grid-view table.items tr.odd
+{
+	background: #fff;
+}
+
+.grid-view table.items tr.selected
+{
+	background: #bce777;
+}
+
+.grid-view table.items tr:hover
+{
+	background: #ecfbd4;
+}
+
+.grid-view .button-column
+{
+	width: 1px;
+	white-space: nowrap;
+}
+
+.grid-view .button-column img
+{
+	vertical-align: middle;
+}
+
+.grid-view .checkbox-column
+{
+	width: 1px;
+}
+
+.grid-view .summary
+{
+	margin: -5px 0 5px 0;
+	text-align: right;
+}
+
+.sizer
+{
+    margin: 0 0 5px 0;
+    text-align: right;
+}
+
+.grid-view .pager
+{
+	margin-top: 5px;
+	text-align: right;
+}
+
+.grid-view .empty
+{
+	font-style: italic;
+}
+
+.grid-view .null
+{
+	color: #999;
+}
+
+.grid-view .filters label
+{
+	color: #666;
+	margin-right: 5px;
+}
+
+.grid-view .filters input,
+.grid-view .filters select
+{
+	border: 1px solid #ccc;
+	width: 85%;
+    margin-bottom: 0;
+}
+
+.item-state {
+    margin-right: 10px;
+}

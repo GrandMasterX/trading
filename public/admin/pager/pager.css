@@ -1,0 +1,5 @@
+div.pagination ul {
+    float: right !important; 
+    width: auto;
+    margin-bottom: 40px;
+}

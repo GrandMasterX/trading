@@ -43,14 +43,7 @@ class UserAuth extends CWebUser
         if ($id)
             return User::model()->active()->findbyPk($id);
         else {
-            if (Yii::app()->user->isGuest) {
-                return false;
-            }
-            else {
-                if (!self::$_user)
-                    self::$_user = User::model()->active()->findbyPk(Yii::app()->user->id);
-                return self::$_user;
-            }
+            return false;
         }
     }
 }

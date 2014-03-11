@@ -1,7 +1,8 @@
 <?php
 class Controller extends CController
 {
-    public $layout = '//layouts/clear';
+
+    public $layout = '//layouts/index';
 
     public $body_class = '';
     public $menu = array();

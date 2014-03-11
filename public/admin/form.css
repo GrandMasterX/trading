@@ -1,0 +1,149 @@
+.form
+{
+	width: 700px;
+    border: 1px solid #D0D0D0 !important;
+    margin: 5px 0 40px 0;
+    border: 1px solid #E3E3E3;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius:                    5px;
+    -webkit-border-radius:            5px;
+    -moz-border-radius:               5px;        
+}
+
+/*.form fieldset
+{
+	margin-top: 10px;
+	padding: 0 10px;
+	border: solid 1px #ccc;
+}*/
+
+/*.form legend
+{
+	padding: 0 10px;
+	margin: 0 10px;
+} */
+
+.form select,
+.form input[type="text"],
+.form input[type="password"],
+.form textarea
+{
+	font-size: 14px;
+	color: #000;
+	border: solid 1px #999;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form textarea
+{
+	padding: 3px;
+}
+
+.form select
+{
+	padding: 2px;
+}
+
+.form select:focus,
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form textarea:focus
+{
+	border: solid 1px #6cc6c6;
+}
+
+.form .row,
+.form .checkboxlist,
+.form .buttons
+{
+	margin: 10px 0;
+}
+
+.form .row label
+{
+	display: block;
+	position: relative;
+}
+
+.form span.required
+{
+	cursor: help;
+/*	position: absolute;*/
+	top: -5px;
+	margin-left: 3px;
+	font: 22px Tahoma, Arial, Helvetica, sans-serif;
+	color: #b50000;
+}
+
+.form .error,
+.form .error label,
+.form .errorMessage
+{
+	color: #b50000;
+}
+
+.form .error input,
+.form .error textarea,
+.form .error select,
+.form input.error,
+.form textarea.error,
+.form select.error
+{
+	background: #fee;
+	border-color: #b50000 !important;
+}
+
+.form .error input:focus,
+.form .error textarea:focus,
+.form .error select:focus,
+.form input.error:focus,
+.form textarea.error:focus,
+.form select.error:focus
+{
+	background: #fff9f9;
+}
+
+.form .hint
+{
+	color: #999;
+}
+
+/*.wide.form fieldset
+{
+	padding: 0;
+} */
+
+.wide.form .row
+{
+	clear: left;
+}
+
+.wide.form .row label
+{
+	float: left;
+	margin-right: 20px;
+	text-align: right;
+	width: 170px;
+}
+
+.wide.form .checkboxlist,
+.wide.form .buttons,
+.wide.form .errorMessage,
+.wide.form .hint
+{
+	clear: left;
+/*	padding-left: 190px;*/
+}
+
+.wide.form .checkboxlist .errorMessage,
+.wide.form .checkboxlist .hint
+{
+	padding-left: 0;
+}
+
+
+
+
