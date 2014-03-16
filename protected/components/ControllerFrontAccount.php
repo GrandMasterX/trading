@@ -5,7 +5,7 @@
  */
 class ControllerFrontAccount extends ControllerFrontEnd
 {
-    public $layout = '//layouts/account';
+    public $layout = '//layouts/index';
 
     public $user;
     public $page;
@@ -51,7 +51,7 @@ class ControllerFrontAccount extends ControllerFrontEnd
     public function beforeAction($view)
     {
         // Check user session
-        $lastActivity = Session::model()->lastActivity(Yii::app()->user->getId());
+        /*$lastActivity = Session::model()->lastActivity(Yii::app()->user->getId());
 
         if ($lastActivity < time() - 60 * 60)
         {
@@ -73,7 +73,7 @@ class ControllerFrontAccount extends ControllerFrontEnd
         // Set up periods
         if (count($this->periods) == 0 && strpos(Yii::app()->request->url, 'period/') === false)
             $this->redirect('/period/manage/');
-
+        */
         return parent::beforeAction($view);
     }
 
@@ -134,5 +134,12 @@ class ControllerFrontAccount extends ControllerFrontEnd
             ),
             array('deny'),
         );
+    }
+
+    public function multiexplode ($delimiters,$string) {
+
+        $ready = str_replace($delimiters, $delimiters[0], $string);
+        $launch = explode($delimiters[0], $ready);
+        return  $launch;
     }
 }

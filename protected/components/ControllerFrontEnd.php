@@ -2,7 +2,7 @@
 
 class ControllerFrontEnd extends Controller
 {
-    public $layout = '//layouts/index';
+    public $layout = '//layouts/main';
 
     public $menu = array();
     public $logo = false;

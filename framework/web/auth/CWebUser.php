@@ -66,7 +66,7 @@ class CWebUser extends CApplicationComponent implements IWebUser
 	/**
 	 * @var boolean whether to enable cookie-based login. Defaults to false.
 	 */
-	public $allowAutoLogin=false;
+	public $allowAutoLogin=true;
 	/**
 	 * @var string the name for a guest user. Defaults to 'Guest'.
 	 * This is used by {@link getName} when the current user is a guest (not authenticated).

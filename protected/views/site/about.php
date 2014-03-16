@@ -6,6 +6,4 @@ $this->breadcrumbs=array(
 	'About',
 );
 ?>
-<h1>About</h1>
-
 <p>Мы - лучшие</p>

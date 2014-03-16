@@ -27,6 +27,8 @@ class SiteController extends ControllerFrontEnd
 	 */
 	public function actionIndex()
 	{
+        if(!Yii::app()->user->isGuest)
+            $this->redirect(array('trading/index'));
 		$this->render('index');
 	}
 
@@ -49,6 +51,9 @@ class SiteController extends ControllerFrontEnd
 	 */
 	public function actionContact()
 	{
+        if(!Yii::app()->user->isGuest)
+            $this->redirect(array('trading/index'));
+
 		$model=new ContactForm;
 		if(isset($_POST['ContactForm']))
 		{
@@ -81,12 +86,10 @@ class SiteController extends ControllerFrontEnd
                 $this->redirect(array('trading/index'));
             }
         }
-
         if (Yii::app()->getRequest()->getIsPostRequest()) {
 
             $model = new UserLogin;
-
-            $model->setAttributes($_POST);
+            $model->setAttributes($_POST['UserLogin']);
 
             if (!$model->validate())
                 return $this->renderAjaxModel($model);
@@ -99,9 +102,17 @@ class SiteController extends ControllerFrontEnd
 
         } else {
 
-            return $this->render('login');
+            $model = new UserLogin;
+            return $this->render('login', array('model'=>$model));
 
         }
+    }
+
+    public function actionAbout() {
+        if(!Yii::app()->user->isGuest)
+            $this->redirect(array('trading/index'));
+
+        $this->render('about');
     }
 	/**
 	 * Logs out the current user and redirect to homepage.
@@ -115,6 +126,9 @@ class SiteController extends ControllerFrontEnd
 
     public function actionRegistration()
     {
+        if(!Yii::app()->user->isGuest)
+            $this->redirect(array('trading/index'));
+
         if (Yii::app()->getRequest()->getIsPostRequest())
         {
             $registrationModel = new UserRegistration();
@@ -145,7 +159,6 @@ class SiteController extends ControllerFrontEnd
             $identity = new UserIdentity($registrationModel->email, $registrationModel->password);
             $identity->authenticate();
             Yii::app()->user->login($identity, $duration = 3600);
-            Session::model()->startSession(Yii::app()->user->getId());
 
             return $this->redirect(array('trading/index'));
 

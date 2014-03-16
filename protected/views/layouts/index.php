@@ -4,7 +4,9 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="language" content="en" />
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
     <!-- blueprint CSS framework -->
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
@@ -14,70 +16,95 @@
 
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-    <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
+
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/themes/smoothness/jquery-ui.css" />
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
     <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
-<body>
-
-<div class="container" id="page">
-
-    <div id="header">
-        <div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-    </div><!-- header -->
-
-    <div id="mainmenu">
-        <?php $this->widget('zii.widgets.CMenu',array(
+<body style="width: 100%;height: 100%;">
+<?php $this->widget('bootstrap.widgets.TbNavbar', array(
+    'type'=>'inverse', // null or 'inverse'
+    'brand'=>'Best Trading',
+    'brandUrl'=>'/',
+    'collapse'=>true, // requires bootstrap-responsive.css
+    'items'=>array(
+        array(
+            'class'=>'bootstrap.widgets.TbMenu',
             'items'=>array(
-                array('label'=>'Home', 'url'=>array('/site/index')),
-                array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-                array('label'=>'Contact', 'url'=>array('/site/contact')),
-                array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-                array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                array('label'=>'Profile', 'url'=>'profile'),
+                array('label'=>'logout', 'url'=>'logout'),
             ),
-        )); ?>
-    </div><!-- mainmenu -->
-    <?php if(isset($this->breadcrumbs)):?>
-        <?php $this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-    <?php endif?>
+        ),
+        //'<form class="navbar-search pull-left" action=""><input type="text" class="search-query span2" placeholder="Search"></form>',
+    ),
+)); ?>
+<?php if(isset($this->breadcrumbs)):?>
+    <?$this->widget('bootstrap.widgets.TbBreadcrumbs', array(
+        'links'=>$this->breadcrumbs,
+    )); ?>
+<?php endif?>
+<div class="container-fluid" style="padding-top: 50px;">
+    <div class="row-fluid">
+        <div class="span6">
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                    <li class="nav-header">Graphic</li>
+                    <?php echo $content; ?>
+                </ul>
+            </div><!--/.well -->
+            <div class="well sidebar-nav">
+                <ul class="nav nav-list">
+                    <li class="nav-header">Portfolio</li>
+                    <div class="row" style="margin-left: 2px">
+                        <div class="col-md-3">
+                            <ul class="nav nav-stacked" id="accordion1">
+                            </ul>
+                        </div>
+                    </div>
+                </ul>
+            </div><!--/.well -->
+        </div><!--/span-->
 
-    <?php echo $content; ?>
+        <div class="span6">
+            <div class="row-fluid">
+                <div class="well sidebar-nav">
+                    <ul class="nav nav-list">
+                        <li class="nav-header">available traders</li>
+                        <?$this->renderPartial('/trading/traders')?>
+                    </ul>
+                </div>
+            </div><!--/row-->
+        </div><!--/span-->
+    </div><!--/row-->
 
-    <div class="clear"></div>
 
-    <div id="footer">
-        Copyright &copy; <?php echo date('Y'); ?> by GrandMasterX.<br/>
-        All Rights Reserved.<br/>
-    </div><!-- footer -->
+    <div class="navbar-fixed-bottom row-fluid" id="footer">
+        Copyright &copy; 2014 by GrandMasterX.<br>
+        All Rights Reserved .<br>
+    </div>
 
-</div><!-- page -->
+</div>
+
+
+<? $this->renderPartial('/trading/graphic')?>
+
 <script type="application/javascript">
-    new Morris.Line({
-        // ID of the element in which to draw the chart.
-        element: 'myfirstchart',
-        // Chart data records -- each entry in this array corresponds to a point on
-        // the chart.
-        data: [
-            { year: '2008', value: 20 },
-            { year: '2009', value: 10 },
-            { year: '2010', value: 5 },
-            { year: '2011', value: 5 },
-            { year: '2012', value: 20 }
-        ],
-        // The name of the data record attribute that contains x-values.
-        xkey: 'year',
-        // A list of names of data record attributes that contain y-values.
-        ykeys: ['value'],
-        // Labels for the ykeys -- will be displayed when you hover over the
-        // chart.
-        labels: ['Value'],
-        smooth: true,
-        xLabels: ["year","month","day","hour","30min","15min","10min","5min","minute"]
+    jQuery.noConflict();
+
+    $(document).ready(function() {
+        $(".panel").draggable();
+        $(".nav.nav-list").droppable({
+            drop: function( event, ui ) {
+                $(this).find('.nav.nav-stacked').append(ui.draggable.css({'left':'0','top':'0'}))
+            }
+        });
     });
 </script>
 </body>

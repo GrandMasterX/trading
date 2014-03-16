@@ -1,6 +1,6 @@
 <?php
 
-class Deals extends CActiveRecord
+class Trader extends CActiveRecord
 {
 
     public static function model($className=__CLASS__)
@@ -13,7 +13,7 @@ class Deals extends CActiveRecord
      */
     public function tableName()
     {
-        return 'deals';
+        return 'traders';
     }
 
     public function behaviors()
@@ -42,6 +42,7 @@ class Deals extends CActiveRecord
         // NOTE: you may need to adjust the relation name and the related
         // class name for the relations automatically generated below.
         return array(
+            'statements'=>array(self::HAS_MANY, 'Statement', 'trader_id'),
         );
     }
 
@@ -71,21 +72,8 @@ class Deals extends CActiveRecord
     {
     }
 
-    static public function dealsByTicket($ticket,$range)
-    {
-        $deals = array();
-        //$data = Deals::model()->findAll();
-        $query='SELECT *
-                    FROM `deals`
-                    WHERE `id` % 30 = 0';
-
-        $data = Yii::app()->db->createCommand($query)->queryAll();
-
-        foreach($data as $dat) {
-            $deals[]= 0+$dat['open'];
-        }
-
-        return $deals;
+    public static function allTraders() {
+        return Trader::model()->findAll();
     }
 
     public static function toArray()

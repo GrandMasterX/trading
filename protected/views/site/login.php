@@ -1,48 +1,57 @@
+<div class="form-outer-holder">
+    <div class="l-form-holder">
+        <div class="login-form-holder">
+            <h2>Login form</h2>
+            <?php $form=$this->beginWidget('CActiveForm', array(
+                'id'=>'login-form',
+                'enableAjaxValidation'=>true,
+                'clientOptions'=>array(
+                    'validateOnSubmit'=>true,
+                ),
+                'htmlOptions'=>array(
+                    'class'=>'form-horizontal'
+                ),
+            )); ?>
 
-<div class="wrapper cleared">
-   <? if (Yii::app()->user->hasFlash('success')) :?>
-    <div class="message-list">
-        <div class="message-item success" style="">
-            <header>Notice
-                <span class="close"></span>
-            </header>
-            <div class="message-item-inner"><? Yii::app()->user->getFlash('success');?></div>
-        </div>
-    </div>
-    <?endif;?>
-
-    <form class="form-signin ajax-submit" action="site/login" method="post">
-        <header class="initiative-header cleared">
-            <span class="initiative-title pull-left">Please sign in</span>
-        </header>
-        <div class="form-wrap create-form">
-            <div class="form-line cleared">
-                <span class="input-title pull-left">Email</span>
-                <label class="input-label medium">
-                    <div class="input-wrap">
-                        <input type="text" name="email" class="input" placeholder="Email address">
-                    </div>
-                </label>
+            <div class="control-group">
+                <?php echo $form->labelEx($model,'email', array('class'=>'control-label')); ?>
+                <div class="controls">
+                    <?php echo $form->textField($model,'email'); ?>
+                    <?php echo $form->error($model,'email'); ?>
+                </div>
             </div>
-            <div class="form-line cleared">
-                <span class="input-title pull-left">Password</span>
-                <label class="input-label medium">
-                    <div class="input-wrap">
-                        <input type="password" name="password" class="input" placeholder="Password">
-                    </div>
-                </label>
-            </div>
-            <div class="form-line cleared">
-                <label class="custom-control-label">
-                    <input type="checkbox" class="custom-control" name="remember" value="1">
-                    <span class="custom-control-title">Remember me</span>
-                </label>
-            </div>
-        </div>
 
-        <input type="submit" class="btn black medium pull-right" value="Sign In">
-        <p class="footer-links"><a href="recover">Forgot password?</a></p>
-        <p class="footer-links"><a href="recover">Forgot password?</a> | <a href="signup">Sign Up</a></p>
-    </form>
+            <div class="control-group">
+                <?php echo $form->labelEx($model,'password', array('class'=>'control-label')); ?>
+                <div class="controls">
+                    <?php echo $form->passwordField($model,'password'); ?>
+                    <?php echo $form->error($model,'password'); ?>
+                </div>
+            </div>
 
+            <div class="control-group">
+                <div class="controls">
+                    <?php echo CHtml::link(('Восстановление пароля'),'/restore',array('class'=>'restore-link'))?>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <?php echo CHtml::link(('Регистрация'),'/signup',array('class'=>'restore-link'))?>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">
+                    <?php echo CHtml::submitButton(Yii::t('loginForm', 'Войти'),array('class'=>'btn')); ?>
+                </div>
+            </div>
+            <?php $this->endWidget(); ?>
+                </div>
+
+                <div class="restore-pass-form-holder" style="display:none">
+                </div>
+            </div>
+            <?php
+            //$this->widget('ext.eauth.EAuthWidget', array('action' => 'site/login'));
+            ?>
 </div>

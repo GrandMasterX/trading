@@ -1,23 +1,22 @@
 <?php
-
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Trading of the Future',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
-	// autoloading model and component classes
+	'preload'=>array('log','bootstrap'),
 	'import'=>array(
         'application.models.*',
         'application.components.*',
         'application.extensions.*',
         'ext.giix.components.*',
 	),
-	// application components
+
 	'components'=>array(
         'authManager'=>array(
             'class' => 'CPhpAuthManager',
             'defaultRoles' => array('guest', 'admin'),
+            'allowAutoLogin' => true,
         ),
         'urlManager' => array(
             'urlFormat' => 'path',
@@ -26,6 +25,7 @@ return array(
             #'showScriptName'=>YII_DEBUG,
             'rules' => array(
                 '/' => 'site/index',
+                'about' => 'site/about',
                 'login' => 'site/login',
                 'logout' => 'site/logout',
                 'signup' => 'site/registration',
@@ -47,7 +47,16 @@ return array(
             'class' => 'ext.bootstrap.components.Bootstrap',
             'responsiveCss' => true,
         ),
-		'errorHandler'=>array(
+        'modules'=>array(
+            'gii'=>array(
+                'class'=>'system.gii.GiiModule',
+                'password'=>'1234',
+                // If removed, Gii defaults to localhost only. Edit carefully to taste.
+                'ipFilters'=>array('127.0.0.1','::1'),
+                'generatorPath'=>array('bootstrap.gii'),
+            ),
+        ),
+            'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
 		),

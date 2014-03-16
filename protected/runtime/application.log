@@ -849,3 +849,1481 @@ Stack trace:
 REQUEST_URI=/trading
 HTTP_REFERER=http://trading/login
 ---
+2014/03/11 22:31:15 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbNavbar" is invalid. Make sure it points to an existing directory or file.' in Z:\home\trading\www\framework\YiiBase.php:348
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 Z:\home\trading\www\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 Z:\home\trading\www\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 Z:\home\trading\www\protected\views\layouts\index.php(66): CBaseController->widget('bootstrap.widge...', Array)
+#4 Z:\home\trading\www\framework\web\CBaseController.php(126): require('Z:\home\trading...')
+#5 Z:\home\trading\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\trading...', Array, true)
+#6 Z:\home\trading\www\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\trading...', Array, true)
+#7 Z:\home\trading\www\protected\controllers\SiteController.php(102): CController->render('login')
+#8 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('login')
+#13 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\trading\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://trading/
+---
+2014/03/11 22:32:13 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbCollapse" is invalid. Make sure it points to an existing directory or file.' in Z:\home\trading\www\framework\YiiBase.php:348
+Stack trace:
+#0 Z:\home\trading\www\protected\extensions\bootstrap\widgets\TbNavbar.php(11): YiiBase::import('bootstrap.widge...')
+#1 Z:\home\trading\www\framework\YiiBase.php(321): require('Z:\home\trading...')
+#2 Z:\home\trading\www\framework\web\CWidgetFactory.php(146): YiiBase::import('ext.bootstrap.w...', true)
+#3 Z:\home\trading\www\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.bootstrap.w...', Array)
+#4 Z:\home\trading\www\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.bootstrap.w...', Array)
+#5 Z:\home\trading\www\protected\views\layouts\index.php(66): CBaseController->widget('ext.bootstrap.w...', Array)
+#6 Z:\home\trading\www\framework\web\CBaseController.php(126): require('Z:\home\trading...')
+#7 Z:\home\trading\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\trading...', Array, true)
+#8 Z:\home\trading\www\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\trading...', Array, true)
+#9 Z:\home\trading\www\protected\controllers\SiteController.php(102): CController->render('login')
+#10 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('login')
+#15 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\trading\www\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://trading/
+---
+2014/03/11 22:32:29 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbCollapse" is invalid. Make sure it points to an existing directory or file.' in Z:\home\trading\www\framework\YiiBase.php:348
+Stack trace:
+#0 Z:\home\trading\www\protected\extensions\bootstrap\widgets\TbNavbar.php(11): YiiBase::import('bootstrap.widge...')
+#1 Z:\home\trading\www\framework\YiiBase.php(321): require('Z:\home\trading...')
+#2 Z:\home\trading\www\framework\web\CWidgetFactory.php(146): YiiBase::import('ext.bootstrap.w...', true)
+#3 Z:\home\trading\www\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.bootstrap.w...', Array)
+#4 Z:\home\trading\www\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.bootstrap.w...', Array)
+#5 Z:\home\trading\www\protected\views\layouts\index.php(66): CBaseController->widget('ext.bootstrap.w...', Array)
+#6 Z:\home\trading\www\framework\web\CBaseController.php(126): require('Z:\home\trading...')
+#7 Z:\home\trading\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\trading...', Array, true)
+#8 Z:\home\trading\www\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\trading...', Array, true)
+#9 Z:\home\trading\www\protected\controllers\SiteController.php(102): CController->render('login')
+#10 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('login')
+#15 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\trading\www\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://trading/
+---
+2014/03/11 22:32:30 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbCollapse" is invalid. Make sure it points to an existing directory or file.' in Z:\home\trading\www\framework\YiiBase.php:348
+Stack trace:
+#0 Z:\home\trading\www\protected\extensions\bootstrap\widgets\TbNavbar.php(11): YiiBase::import('bootstrap.widge...')
+#1 Z:\home\trading\www\framework\YiiBase.php(321): require('Z:\home\trading...')
+#2 Z:\home\trading\www\framework\web\CWidgetFactory.php(146): YiiBase::import('ext.bootstrap.w...', true)
+#3 Z:\home\trading\www\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'ext.bootstrap.w...', Array)
+#4 Z:\home\trading\www\framework\web\CBaseController.php(172): CBaseController->createWidget('ext.bootstrap.w...', Array)
+#5 Z:\home\trading\www\protected\views\layouts\index.php(66): CBaseController->widget('ext.bootstrap.w...', Array)
+#6 Z:\home\trading\www\framework\web\CBaseController.php(126): require('Z:\home\trading...')
+#7 Z:\home\trading\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\trading...', Array, true)
+#8 Z:\home\trading\www\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\trading...', Array, true)
+#9 Z:\home\trading\www\protected\controllers\SiteController.php(102): CController->render('login')
+#10 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('login')
+#15 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\trading\www\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://trading/
+---
+2014/03/11 22:36:14 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbNavbar" is invalid. Make sure it points to an existing directory or file.' in Z:\home\trading\www\framework\YiiBase.php:348
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 Z:\home\trading\www\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 Z:\home\trading\www\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 Z:\home\trading\www\protected\views\layouts\index.php(66): CBaseController->widget('bootstrap.widge...', Array)
+#4 Z:\home\trading\www\framework\web\CBaseController.php(126): require('Z:\home\trading...')
+#5 Z:\home\trading\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\trading...', Array, true)
+#6 Z:\home\trading\www\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\trading...', Array, true)
+#7 Z:\home\trading\www\protected\controllers\SiteController.php(102): CController->render('login')
+#8 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('login')
+#13 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\trading\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://trading/
+---
+2014/03/11 22:36:15 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbNavbar" is invalid. Make sure it points to an existing directory or file.' in Z:\home\trading\www\framework\YiiBase.php:348
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 Z:\home\trading\www\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 Z:\home\trading\www\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 Z:\home\trading\www\protected\views\layouts\index.php(66): CBaseController->widget('bootstrap.widge...', Array)
+#4 Z:\home\trading\www\framework\web\CBaseController.php(126): require('Z:\home\trading...')
+#5 Z:\home\trading\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\trading...', Array, true)
+#6 Z:\home\trading\www\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\trading...', Array, true)
+#7 Z:\home\trading\www\protected\controllers\SiteController.php(102): CController->render('login')
+#8 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('login')
+#13 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\trading\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://trading/
+---
+2014/03/11 22:37:59 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbNavbar" is invalid. Make sure it points to an existing directory or file.' in Z:\home\trading\www\framework\YiiBase.php:348
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 Z:\home\trading\www\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 Z:\home\trading\www\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 Z:\home\trading\www\protected\views\layouts\index.php(66): CBaseController->widget('bootstrap.widge...', Array)
+#4 Z:\home\trading\www\framework\web\CBaseController.php(126): require('Z:\home\trading...')
+#5 Z:\home\trading\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\trading...', Array, true)
+#6 Z:\home\trading\www\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\trading...', Array, true)
+#7 Z:\home\trading\www\protected\controllers\SiteController.php(102): CController->render('login')
+#8 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('login')
+#13 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\trading\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://trading/
+---
+2014/03/11 22:38:00 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.TbNavbar" is invalid. Make sure it points to an existing directory or file.' in Z:\home\trading\www\framework\YiiBase.php:348
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWidgetFactory.php(146): YiiBase::import('bootstrap.widge...', true)
+#1 Z:\home\trading\www\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 Z:\home\trading\www\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 Z:\home\trading\www\protected\views\layouts\index.php(66): CBaseController->widget('bootstrap.widge...', Array)
+#4 Z:\home\trading\www\framework\web\CBaseController.php(126): require('Z:\home\trading...')
+#5 Z:\home\trading\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\trading...', Array, true)
+#6 Z:\home\trading\www\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\trading...', Array, true)
+#7 Z:\home\trading\www\protected\controllers\SiteController.php(102): CController->render('login')
+#8 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#9 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('login')
+#13 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#14 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\trading\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://trading/
+---
+2014/03/11 23:03:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('about/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://trading/
+---
+2014/03/11 23:04:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('about/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://trading/
+---
+2014/03/11 23:04:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('about/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://trading/
+---
+2014/03/11 23:04:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('about')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('about')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://trading/
+---
+2014/03/11 23:05:43 [error] [exception.CException] exception 'CException' with message 'SiteController cannot find the requested view "about".' in Z:\home\trading\www\framework\web\CController.php:878
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(782): CController->renderPartial('about', NULL, true)
+#1 Z:\home\trading\www\protected\controllers\SiteController.php(108): CController->render('about')
+#2 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionAbout()
+#3 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('about')
+#7 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/about')
+#8 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 Z:\home\trading\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/about
+HTTP_REFERER=http://trading/
+---
+2014/03/11 23:08:51 [error] [exception.CException] exception 'CException' with message 'TbInput: Failed to initialize widget! Model is not set.' in Z:\home\trading\www\protected\extensions\bootstrap\widgets\input\TbInput.php:141
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CBaseController.php(147): TbInput->init()
+#1 Z:\home\trading\www\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#2 Z:\home\trading\www\protected\extensions\bootstrap\widgets\TbActiveForm.php(1008): CBaseController->widget('bootstrap.widge...', Array)
+#3 Z:\home\trading\www\protected\extensions\bootstrap\widgets\TbActiveForm.php(262): TbActiveForm->inputRow('text', NULL, 'textField', NULL, Array)
+#4 Z:\home\trading\www\protected\views\site\login.php(7): TbActiveForm->textFieldRow(NULL, 'textField', Array)
+#5 Z:\home\trading\www\framework\web\CBaseController.php(126): require('Z:\home\trading...')
+#6 Z:\home\trading\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\trading...', NULL, true)
+#7 Z:\home\trading\www\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\trading...', NULL, true)
+#8 Z:\home\trading\www\framework\web\CController.php(782): CController->renderPartial('login', NULL, true)
+#9 Z:\home\trading\www\protected\controllers\SiteController.php(102): CController->render('login')
+#10 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('login')
+#15 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\trading\www\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://trading/about
+---
+2014/03/11 23:09:41 [error] [php] strpos() expects parameter 1 to be string, array given (Z:\home\trading\www\framework\web\CController.php:706)
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(867): SiteController->getViewFile()
+#1 Z:\home\trading\www\framework\web\CController.php(782): SiteController->renderPartial()
+#2 Z:\home\trading\www\protected\controllers\SiteController.php(102): SiteController->render()
+#3 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 Z:\home\trading\www\framework\web\CController.php(286): SiteController->runAction()
+#6 Z:\home\trading\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 Z:\home\trading\www\framework\web\CWebApplication.php(282): SiteController->run()
+#8 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/login
+in Z:\home\trading\www\protected\controllers\SiteController.php (102)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 23:09:58 [error] [exception.CException] exception 'CException' with message 'TbInput: Failed to initialize widget! Model is not set.' in Z:\home\trading\www\protected\extensions\bootstrap\widgets\input\TbInput.php:141
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CBaseController.php(147): TbInput->init()
+#1 Z:\home\trading\www\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#2 Z:\home\trading\www\protected\extensions\bootstrap\widgets\TbActiveForm.php(1008): CBaseController->widget('bootstrap.widge...', Array)
+#3 Z:\home\trading\www\protected\extensions\bootstrap\widgets\TbActiveForm.php(262): TbActiveForm->inputRow('text', NULL, 'textField', NULL, Array)
+#4 Z:\home\trading\www\protected\views\site\login.php(7): TbActiveForm->textFieldRow(NULL, 'textField', Array)
+#5 Z:\home\trading\www\framework\web\CBaseController.php(126): require('Z:\home\trading...')
+#6 Z:\home\trading\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\trading...', Object(UserLogin), true)
+#7 Z:\home\trading\www\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\trading...', Object(UserLogin), true)
+#8 Z:\home\trading\www\framework\web\CController.php(782): CController->renderPartial('login', Object(UserLogin), true)
+#9 Z:\home\trading\www\protected\controllers\SiteController.php(102): CController->render('login', Object(UserLogin))
+#10 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('login')
+#15 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\trading\www\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://trading/about
+---
+2014/03/11 23:10:33 [error] [exception.CException] exception 'CException' with message 'TbInput: Failed to initialize widget! Model is not set.' in Z:\home\trading\www\protected\extensions\bootstrap\widgets\input\TbInput.php:141
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CBaseController.php(147): TbInput->init()
+#1 Z:\home\trading\www\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#2 Z:\home\trading\www\protected\extensions\bootstrap\widgets\TbActiveForm.php(1008): CBaseController->widget('bootstrap.widge...', Array)
+#3 Z:\home\trading\www\protected\extensions\bootstrap\widgets\TbActiveForm.php(262): TbActiveForm->inputRow('text', NULL, 'textField', NULL, Array)
+#4 Z:\home\trading\www\protected\views\site\login.php(7): TbActiveForm->textFieldRow(NULL, 'textField', Array)
+#5 Z:\home\trading\www\framework\web\CBaseController.php(126): require('Z:\home\trading...')
+#6 Z:\home\trading\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\trading...', Object(UserLogin), true)
+#7 Z:\home\trading\www\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\trading...', Object(UserLogin), true)
+#8 Z:\home\trading\www\framework\web\CController.php(782): CController->renderPartial('login', Object(UserLogin), true)
+#9 Z:\home\trading\www\protected\controllers\SiteController.php(102): CController->render('login', Object(UserLogin))
+#10 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('login')
+#15 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\trading\www\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://trading/about
+---
+2014/03/11 23:11:35 [error] [exception.CException] exception 'CException' with message 'Property "UserLogin.textField" is not defined.' in Z:\home\trading\www\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\trading\www\framework\web\helpers\CHtml.php(2529): CComponent->__get('textField')
+#1 Z:\home\trading\www\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(UserLogin), 'textField')
+#2 Z:\home\trading\www\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(UserLogin), 'textField', Array)
+#3 Z:\home\trading\www\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(UserLogin), 'textField', Array)
+#4 Z:\home\trading\www\protected\extensions\bootstrap\widgets\input\TbInputVertical.php(210): CActiveForm->textField(Object(UserLogin), 'textField', Array)
+#5 Z:\home\trading\www\protected\extensions\bootstrap\widgets\input\TbInput.php(298): TbInputVertical->textField()
+#6 Z:\home\trading\www\framework\web\CBaseController.php(173): TbInput->run()
+#7 Z:\home\trading\www\protected\extensions\bootstrap\widgets\TbActiveForm.php(1008): CBaseController->widget('bootstrap.widge...', Array)
+#8 Z:\home\trading\www\protected\extensions\bootstrap\widgets\TbActiveForm.php(262): TbActiveForm->inputRow('text', Object(UserLogin), 'textField', NULL, Array)
+#9 Z:\home\trading\www\protected\views\site\login.php(7): TbActiveForm->textFieldRow(Object(UserLogin), 'textField', Array)
+#10 Z:\home\trading\www\framework\web\CBaseController.php(126): require('Z:\home\trading...')
+#11 Z:\home\trading\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\trading...', Array, true)
+#12 Z:\home\trading\www\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\trading...', Array, true)
+#13 Z:\home\trading\www\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#14 Z:\home\trading\www\protected\controllers\SiteController.php(103): CController->render('login', Array)
+#15 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#16 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#17 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#18 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('login')
+#20 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#21 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#22 Z:\home\trading\www\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/login
+HTTP_REFERER=http://trading/about
+---
+2014/03/11 23:14:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "restore/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('restore/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/restore
+HTTP_REFERER=http://trading/login
+---
+2014/03/11 23:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "static/img/login/astraFit.png".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/img/logi...')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/img/login/astraFit.png
+HTTP_REFERER=http://trading/login
+---
+2014/03/11 23:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "static/img/login/astraFit.png".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('static/img/logi...')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/static/img/login/astraFit.png
+HTTP_REFERER=http://trading/login
+---
+2014/03/11 23:15:36 [warning] [application] Failed to set unsafe attribute "UserLogin" of "UserLogin".
+in Z:\home\trading\www\protected\controllers\SiteController.php (89)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 23:15:36 [warning] [application] Failed to set unsafe attribute "yt0" of "UserLogin".
+in Z:\home\trading\www\protected\controllers\SiteController.php (89)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 23:16:01 [warning] [application] Failed to set unsafe attribute "UserLogin" of "UserLogin".
+in Z:\home\trading\www\protected\controllers\SiteController.php (89)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 23:16:01 [warning] [application] Failed to set unsafe attribute "yt0" of "UserLogin".
+in Z:\home\trading\www\protected\controllers\SiteController.php (89)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 23:18:48 [warning] [application] Failed to set unsafe attribute "UserLogin" of "UserLogin".
+in Z:\home\trading\www\protected\controllers\SiteController.php (89)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 23:18:48 [warning] [application] Failed to set unsafe attribute "yt0" of "UserLogin".
+in Z:\home\trading\www\protected\controllers\SiteController.php (89)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 23:21:46 [warning] [application] Failed to set unsafe attribute "UserLogin" of "UserLogin".
+in Z:\home\trading\www\protected\controllers\SiteController.php (88)
+in Z:\home\trading\www\index.php (13)
+2014/03/11 23:21:46 [warning] [application] Failed to set unsafe attribute "yt0" of "UserLogin".
+in Z:\home\trading\www\protected\controllers\SiteController.php (88)
+in Z:\home\trading\www\index.php (13)
+2014/03/12 00:47:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/12 01:50:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/12 01:50:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/12 01:51:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/12 01:51:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/12 02:14:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in Z:\home\trading\www\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\trading\www\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('about')
+#1 Z:\home\trading\www\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\trading\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://trading/
+---
+2014/03/12 12:32:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in Z:\home\trading\www\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\trading\www\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('about')
+#1 Z:\home\trading\www\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\trading\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://trading/
+---
+2014/03/12 12:32:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in Z:\home\trading\www\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\trading\www\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('about')
+#1 Z:\home\trading\www\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\trading\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://trading/site/contact
+---
+2014/03/12 12:32:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in Z:\home\trading\www\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\trading\www\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('about')
+#1 Z:\home\trading\www\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\trading\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://trading/site/contact
+---
+2014/03/12 16:50:59 [error] [php] include(Session.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (Z:\home\trading\www\framework\YiiBase.php:432)
+Stack trace:
+#0 Z:\home\trading\www\protected\components\ControllerFrontAccount.php(54): spl_autoload_call()
+#1 Z:\home\trading\www\framework\web\CController.php(306): TradingController->beforeAction()
+#2 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): TradingController->runAction()
+#3 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\trading\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): TradingController->filterAccessControl()
+#6 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\trading\www\framework\web\CController.php(265): TradingController->runActionWithFilters()
+#9 Z:\home\trading\www\framework\web\CWebApplication.php(282): TradingController->run()
+#10 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/trading
+in Z:\home\trading\www\protected\components\ControllerFrontAccount.php (54)
+in Z:\home\trading\www\index.php (13)
+2014/03/12 16:54:35 [error] [php] include(Period.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (Z:\home\trading\www\framework\YiiBase.php:432)
+Stack trace:
+#0 Z:\home\trading\www\protected\components\ControllerFrontAccount.php(68): spl_autoload_call()
+#1 Z:\home\trading\www\framework\web\CController.php(306): TradingController->beforeAction()
+#2 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): TradingController->runAction()
+#3 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#4 Z:\home\trading\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#5 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): TradingController->filterAccessControl()
+#6 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#7 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#8 Z:\home\trading\www\framework\web\CController.php(265): TradingController->runActionWithFilters()
+#9 Z:\home\trading\www\framework\web\CWebApplication.php(282): TradingController->run()
+#10 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/trading
+in Z:\home\trading\www\protected\components\ControllerFrontAccount.php (68)
+in Z:\home\trading\www\index.php (13)
+2014/03/12 22:37:12 [error] [exception.CException] exception 'CException' with message 'Property "TbNavbar.style" is not defined.' in Z:\home\trading\www\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWidgetFactory.php(161): CComponent->__set('style', 'position:none;')
+#1 Z:\home\trading\www\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(TradingController), 'bootstrap.widge...', Array)
+#2 Z:\home\trading\www\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 Z:\home\trading\www\protected\views\layouts\index.php(42): CBaseController->widget('bootstrap.widge...', Array)
+#4 Z:\home\trading\www\framework\web\CBaseController.php(126): require('Z:\home\trading...')
+#5 Z:\home\trading\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\trading...', Array, true)
+#6 Z:\home\trading\www\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\trading...', Array, true)
+#7 Z:\home\trading\www\protected\controllers\TradingController.php(30): CController->render('index')
+#8 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): TradingController->actionIndex()
+#9 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 Z:\home\trading\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#16 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('index')
+#18 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/index')
+#19 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 Z:\home\trading\www\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/trading
+HTTP_REFERER=http://trading/login
+---
+2014/03/12 22:37:13 [error] [exception.CException] exception 'CException' with message 'Property "TbNavbar.style" is not defined.' in Z:\home\trading\www\framework\base\CComponent.php:173
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWidgetFactory.php(161): CComponent->__set('style', 'position:none;')
+#1 Z:\home\trading\www\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(TradingController), 'bootstrap.widge...', Array)
+#2 Z:\home\trading\www\framework\web\CBaseController.php(172): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 Z:\home\trading\www\protected\views\layouts\index.php(42): CBaseController->widget('bootstrap.widge...', Array)
+#4 Z:\home\trading\www\framework\web\CBaseController.php(126): require('Z:\home\trading...')
+#5 Z:\home\trading\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\trading...', Array, true)
+#6 Z:\home\trading\www\framework\web\CController.php(784): CBaseController->renderFile('Z:\home\trading...', Array, true)
+#7 Z:\home\trading\www\protected\controllers\TradingController.php(30): CController->render('index')
+#8 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): TradingController->actionIndex()
+#9 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 Z:\home\trading\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#16 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('index')
+#18 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/index')
+#19 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 Z:\home\trading\www\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/trading
+HTTP_REFERER=http://trading/login
+---
+2014/03/13 04:44:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getData".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('getData')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trading/getData
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:45:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getData".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('getData')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trading/getData
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:45:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getData".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('getData')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trading/getData
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:46:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getData".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('getData')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trading/getData
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:47:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getData".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('getData')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/getData
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:47:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "getData/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('getData/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/getData
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:47:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getData".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('getData')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trading/getData
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:48:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getData".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('getData')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trading/getData
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:49:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "getData/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('getData/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/getData
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:49:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "getData/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('getData/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/getData/
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:50:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "getData/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('getData/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/getData
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:51:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "getData/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('getData/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/getData
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:52:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "getData/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('getData/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/getData
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:53:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getData".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('getData')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trading/getData
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:53:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dealsByTicket".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('dealsByTicket')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('dealsByTicket')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/dealsBy...')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trading/dealsByTicket
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:54:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dealsByTicket".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('dealsByTicket')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('dealsByTicket')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/dealsBy...')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trading/dealsByTicket
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:54:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dealsByTicket".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('dealsByTicket')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('dealsByTicket')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/dealsBy...')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trading/dealsByTicket
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dealsByTicket/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('dealsByTicket/i...')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dealsByTicket
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:54:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dealsByTicket".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('dealsByTicket')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('dealsByTicket')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/dealsBy...')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trading/dealsByTicket
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:54:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dealsByTicket/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('dealsByTicket/i...')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dealsByTicket
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:55:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dealsByTicket".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('dealsByTicket')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('dealsByTicket')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/dealsBy...')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trading/dealsByTicket
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:58:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "dealsByTicket".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('dealsByTicket')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('dealsByTicket')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/dealsBy...')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trading/dealsByTicket
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:58:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dealsByTicket/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('dealsByTicket/i...')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dealsByTicket
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:58:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "dealsByTicket/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('dealsByTicket/i...')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/dealsByTicket/
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:59:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "getData/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('getData/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/getData/
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 04:59:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "getData/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('getData/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/getData/
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 05:00:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "getData/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('getData/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/getData/
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 05:00:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getData".' in Z:\home\trading\www\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(270): CController->missingAction('getData')
+#1 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#2 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#3 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\trading\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/trading/getData/
+HTTP_REFERER=http://trading/trading
+---
+2014/03/13 06:27:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/13 06:27:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/13 06:29:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/13 06:29:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/13 06:36:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/13 06:36:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/13 06:45:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/13 06:45:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/13 06:51:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/13 06:51:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/13 07:27:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/13 07:27:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/13 07:29:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "register/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('register/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/register
+HTTP_REFERER=http://trading/login
+---
+2014/03/13 07:29:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "register/index".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('register/index')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/register
+HTTP_REFERER=http://trading/login
+---
+2014/03/13 07:30:10 [error] [exception.CException] exception 'CException' with message 'CWebUser.allowAutoLogin must be set true in order to use cookie-based authentication.' in Z:\home\trading\www\framework\web\auth\CWebUser.php:240
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(150): CWebUser->login(Object(UserIdentity), 3600)
+#1 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('registration')
+#6 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#7 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\trading\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/registration
+HTTP_REFERER=http://trading/signup
+---
+2014/03/13 07:32:15 [error] [exception.CException] exception 'CException' with message 'CWebUser.allowAutoLogin must be set true in order to use cookie-based authentication.' in Z:\home\trading\www\framework\web\auth\CWebUser.php:240
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(150): CWebUser->login(Object(UserIdentity), 3600)
+#1 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('registration')
+#6 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/registrati...')
+#7 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\trading\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/registration
+HTTP_REFERER=http://trading/signup
+---
+2014/03/13 07:33:44 [error] [php] include(Session.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (Z:\home\trading\www\framework\YiiBase.php:432)
+Stack trace:
+#0 Z:\home\trading\www\protected\controllers\SiteController.php(151): spl_autoload_call()
+#1 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): SiteController->actionRegistration()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 Z:\home\trading\www\framework\web\CController.php(286): SiteController->runAction()
+#4 Z:\home\trading\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 Z:\home\trading\www\framework\web\CWebApplication.php(282): SiteController->run()
+#6 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/registration
+in Z:\home\trading\www\protected\controllers\SiteController.php (151)
+in Z:\home\trading\www\index.php (13)
+2014/03/14 03:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/14 04:57:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resources/demos/style.css".' in Z:\home\trading\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('resources/demos...')
+#1 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\trading\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resources/demos/style.css
+HTTP_REFERER=http://trading/trading
+---
+2014/03/14 05:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in Z:\home\trading\www\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\trading\www\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('about')
+#1 Z:\home\trading\www\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\trading\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://trading/
+---
+2014/03/14 06:10:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in Z:\home\trading\www\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\trading\www\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('about')
+#1 Z:\home\trading\www\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\trading\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://trading/
+---
+2014/03/14 06:10:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in Z:\home\trading\www\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\trading\www\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('about')
+#1 Z:\home\trading\www\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\trading\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://trading/
+---
+2014/03/14 06:10:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in Z:\home\trading\www\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\trading\www\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('about')
+#1 Z:\home\trading\www\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\trading\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://trading/site/contact
+---
+2014/03/14 06:10:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "about" was not found.' in Z:\home\trading\www\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 Z:\home\trading\www\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('about')
+#1 Z:\home\trading\www\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 Z:\home\trading\www\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 Z:\home\trading\www\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('page')
+#6 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 Z:\home\trading\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/site/page?view=about
+HTTP_REFERER=http://trading/site/contact
+---
+2014/03/15 06:54:55 [error] [exception.CException] exception 'CException' with message 'CDbCommand and its behaviors do not have a method or closure named "findAll".' in Z:\home\trading\www\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\trading\www\protected\models\Deals.php(90): CComponent->__call('findAll', Array)
+#1 Z:\home\trading\www\protected\models\Deals.php(90): CDbCommand->findAll()
+#2 Z:\home\trading\www\protected\controllers\TradingController.php(34): Deals::dealsByTicket(1, 1)
+#3 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): TradingController->actionGetData()
+#4 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\trading\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#13 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#14 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\trading\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/trading/getData/
+HTTP_REFERER=http://trading/trading
+---
+2014/03/15 06:56:29 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index
+                        FROM deals
+                        ORDER BY id
+' at line 5. The SQL statement executed was: SELECT *
+                    FROM (
+                        SELECT * , (
+                          @i := @i +1
+                        ) AS index
+                        FROM deals
+                        ORDER BY id
+                    ) AS t
+                WHERE index % 30 =0.
+in Z:\home\trading\www\protected\models\Deals.php (89)
+in Z:\home\trading\www\protected\controllers\TradingController.php (34)
+in Z:\home\trading\www\index.php (13)
+2014/03/15 06:56:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index
+                        FROM deals
+                        ORDER BY id
+' at line 5. The SQL statement executed was: SELECT *
+                    FROM (
+                        SELECT * , (
+                          @i := @i +1
+                        ) AS index
+                        FROM deals
+                        ORDER BY id
+                    ) AS t
+                WHERE index % 30 =0' in Z:\home\trading\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 Z:\home\trading\www\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 Z:\home\trading\www\protected\models\Deals.php(89): CDbCommand->queryAll()
+#2 Z:\home\trading\www\protected\controllers\TradingController.php(34): Deals::dealsByTicket(1, 1)
+#3 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): TradingController->actionGetData()
+#4 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\trading\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#13 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#14 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\trading\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/trading/getData/
+HTTP_REFERER=http://trading/trading
+---
+2014/03/15 06:57:30 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index
+                        FROM deals
+                        ORDER BY id
+' at line 5. The SQL statement executed was: SELECT *
+                    FROM (
+                        SELECT * , (
+                          @i := @i +1
+                        ) AS index
+                        FROM deals
+                        ORDER BY id
+                    ) AS t
+                WHERE index % 30 =0;.
+in Z:\home\trading\www\protected\models\Deals.php (89)
+in Z:\home\trading\www\protected\controllers\TradingController.php (34)
+in Z:\home\trading\www\index.php (13)
+2014/03/15 06:57:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'index
+                        FROM deals
+                        ORDER BY id
+' at line 5. The SQL statement executed was: SELECT *
+                    FROM (
+                        SELECT * , (
+                          @i := @i +1
+                        ) AS index
+                        FROM deals
+                        ORDER BY id
+                    ) AS t
+                WHERE index % 30 =0;' in Z:\home\trading\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 Z:\home\trading\www\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 Z:\home\trading\www\protected\models\Deals.php(89): CDbCommand->queryAll()
+#2 Z:\home\trading\www\protected\controllers\TradingController.php(34): Deals::dealsByTicket(1, 1)
+#3 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): TradingController->actionGetData()
+#4 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\trading\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#13 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#14 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\trading\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/trading/getData/
+HTTP_REFERER=http://trading/trading
+---
+2014/03/15 07:00:54 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error. The SQL statement executed was: SET @i = 0;
+                    SELECT *
+                        FROM (
+                          SELECT *, (@i := @i + 1) AS `index`
+                          FROM `deals`
+                          ORDER BY `id`
+                        ) AS `t`
+                    WHERE `index` % 30 = 0;
+                .
+in Z:\home\trading\www\protected\models\Deals.php (89)
+in Z:\home\trading\www\protected\controllers\TradingController.php (34)
+in Z:\home\trading\www\index.php (13)
+2014/03/15 07:00:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error. The SQL statement executed was: SET @i = 0;
+                    SELECT *
+                        FROM (
+                          SELECT *, (@i := @i + 1) AS `index`
+                          FROM `deals`
+                          ORDER BY `id`
+                        ) AS `t`
+                    WHERE `index` % 30 = 0;
+                ' in Z:\home\trading\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 Z:\home\trading\www\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 Z:\home\trading\www\protected\models\Deals.php(89): CDbCommand->queryAll()
+#2 Z:\home\trading\www\protected\controllers\TradingController.php(34): Deals::dealsByTicket(1, 1)
+#3 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): TradingController->actionGetData()
+#4 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\trading\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#13 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#14 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\trading\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/trading/getData/
+HTTP_REFERER=http://trading/trading
+---
+2014/03/15 07:02:11 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error. The SQL statement executed was: SET @i = 0;
+                    SELECT *
+                        FROM (
+                          SELECT *, (@i := @i + 1) AS `index`
+                          FROM `deals`
+                          ORDER BY `id`
+                        ) AS `t`
+                    WHERE `index` % 30 = 0;.
+in Z:\home\trading\www\protected\models\Deals.php (88)
+in Z:\home\trading\www\protected\controllers\TradingController.php (34)
+in Z:\home\trading\www\index.php (13)
+2014/03/15 07:02:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error. The SQL statement executed was: SET @i = 0;
+                    SELECT *
+                        FROM (
+                          SELECT *, (@i := @i + 1) AS `index`
+                          FROM `deals`
+                          ORDER BY `id`
+                        ) AS `t`
+                    WHERE `index` % 30 = 0;' in Z:\home\trading\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 Z:\home\trading\www\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 Z:\home\trading\www\protected\models\Deals.php(88): CDbCommand->queryAll()
+#2 Z:\home\trading\www\protected\controllers\TradingController.php(34): Deals::dealsByTicket(1, 1)
+#3 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): TradingController->actionGetData()
+#4 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\trading\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#13 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#14 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\trading\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/trading/getData/
+HTTP_REFERER=http://trading/trading
+---
+2014/03/15 07:04:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error. The SQL statement executed was: SET @i = 0;
+                    SELECT *
+                        FROM (
+                          SELECT *, (@i := @i + 1) AS `index`
+                          FROM `deals`
+                          ORDER BY `id`
+                        ) AS `t`
+                    WHERE `index` % 30 = 0;.
+in Z:\home\trading\www\protected\models\Deals.php (88)
+in Z:\home\trading\www\protected\controllers\TradingController.php (34)
+in Z:\home\trading\www\index.php (13)
+2014/03/15 07:04:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error. The SQL statement executed was: SET @i = 0;
+                    SELECT *
+                        FROM (
+                          SELECT *, (@i := @i + 1) AS `index`
+                          FROM `deals`
+                          ORDER BY `id`
+                        ) AS `t`
+                    WHERE `index` % 30 = 0;' in Z:\home\trading\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 Z:\home\trading\www\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 Z:\home\trading\www\protected\models\Deals.php(88): CDbCommand->queryAll()
+#2 Z:\home\trading\www\protected\controllers\TradingController.php(34): Deals::dealsByTicket(1, 1)
+#3 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): TradingController->actionGetData()
+#4 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\trading\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#13 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#14 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\trading\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/trading/getData/
+HTTP_REFERER=http://trading/trading
+---
+2014/03/15 07:05:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[HY000]: General error. The SQL statement executed was: SET @i = 0;
+                    SELECT *
+                        FROM (
+                          SELECT *, (@i := @i + 1) AS `index`
+                          FROM `deals`
+                          ORDER BY `id`
+                        ) AS `t`
+                    WHERE `index` % 30 = 0;.
+in Z:\home\trading\www\protected\models\Deals.php (88)
+in Z:\home\trading\www\protected\controllers\TradingController.php (34)
+in Z:\home\trading\www\index.php (13)
+2014/03/15 07:05:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error. The SQL statement executed was: SET @i = 0;
+                    SELECT *
+                        FROM (
+                          SELECT *, (@i := @i + 1) AS `index`
+                          FROM `deals`
+                          ORDER BY `id`
+                        ) AS `t`
+                    WHERE `index` % 30 = 0;' in Z:\home\trading\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 Z:\home\trading\www\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 Z:\home\trading\www\protected\models\Deals.php(88): CDbCommand->queryAll()
+#2 Z:\home\trading\www\protected\controllers\TradingController.php(34): Deals::dealsByTicket(1, 1)
+#3 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): TradingController->actionGetData()
+#4 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 Z:\home\trading\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#11 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('getData')
+#13 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/getData')
+#14 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\trading\www\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/trading/getData/
+HTTP_REFERER=http://trading/trading
+---
+2014/03/16 05:52:32 [error] [exception.CDbException] exception 'CDbException' with message 'Table "traders" does not have a column named "ticket".' in Z:\home\trading\www\framework\db\schema\CDbCommandBuilder.php:694
+Stack trace:
+#0 Z:\home\trading\www\framework\db\ar\CActiveRecord.php(1518): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), Array, '', Array, '`t`.')
+#1 Z:\home\trading\www\protected\controllers\TradingController.php(39): CActiveRecord->findByAttributes(Array)
+#2 Z:\home\trading\www\framework\web\actions\CInlineAction.php(49): TradingController->actionDrawTicket()
+#3 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 Z:\home\trading\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#10 Z:\home\trading\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\trading\www\framework\web\CWebApplication.php(282): CController->run('drawTicket')
+#12 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController('trading/drawTic...')
+#13 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\trading\www\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/trading/drawTicket/
+HTTP_REFERER=http://trading/trading
+---
+2014/03/16 06:07:27 [error] [php] strftime() expects parameter 2 to be long, string given (Z:\home\trading\www\protected\controllers\TradingController.php:43)
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): TradingController->runAction()
+#2 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\trading\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): TradingController->filterAccessControl()
+#5 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\trading\www\framework\web\CController.php(265): TradingController->runActionWithFilters()
+#8 Z:\home\trading\www\framework\web\CWebApplication.php(282): TradingController->run()
+#9 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/trading/drawTicket/
+in Z:\home\trading\www\protected\controllers\TradingController.php (43)
+in Z:\home\trading\www\index.php (13)
+2014/03/16 06:08:20 [error] [php] strftime() expects parameter 2 to be long, string given (Z:\home\trading\www\protected\controllers\TradingController.php:40)
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): TradingController->runAction()
+#2 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\trading\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): TradingController->filterAccessControl()
+#5 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\trading\www\framework\web\CController.php(265): TradingController->runActionWithFilters()
+#8 Z:\home\trading\www\framework\web\CWebApplication.php(282): TradingController->run()
+#9 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/trading/drawTicket/
+in Z:\home\trading\www\protected\controllers\TradingController.php (40)
+in Z:\home\trading\www\index.php (13)
+2014/03/16 06:09:28 [error] [php] strftime() expects parameter 2 to be long, string given (Z:\home\trading\www\protected\controllers\TradingController.php:40)
+Stack trace:
+#0 Z:\home\trading\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 Z:\home\trading\www\framework\web\filters\CFilterChain.php(133): TradingController->runAction()
+#2 Z:\home\trading\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 Z:\home\trading\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 Z:\home\trading\www\framework\web\filters\CInlineFilter.php(58): TradingController->filterAccessControl()
+#5 Z:\home\trading\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#6 Z:\home\trading\www\framework\web\CController.php(291): CFilterChain->run()
+#7 Z:\home\trading\www\framework\web\CController.php(265): TradingController->runActionWithFilters()
+#8 Z:\home\trading\www\framework\web\CWebApplication.php(282): TradingController->run()
+#9 Z:\home\trading\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 Z:\home\trading\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\trading\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/trading/drawTicket/
+in Z:\home\trading\www\protected\controllers\TradingController.php (40)
+in Z:\home\trading\www\index.php (13)
